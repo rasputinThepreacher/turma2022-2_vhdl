@@ -10,11 +10,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity a04_for_tb
 -- Compiling architecture sim of a04_for_tb
 
-} {} {}} D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd
+} {} {}} D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a06_signal_variable_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a06_signal_variable_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
--- Compiling entity a03_loop_tb
--- Compiling architecture sim of a03_loop_tb
+-- Compiling entity a06_signal_variable_tb
+-- Compiling architecture sim of a06_signal_variable_tb
+
+} {} {}} D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a01_hello_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a01_hello_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity a01_hello_tb
+-- Compiling architecture sim of a01_hello_tb
 
 } {} {}} D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a02_wait_for_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a02_wait_for_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -22,10 +28,10 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity a02_wait_for_tb
 -- Compiling architecture sim of a02_wait_for_tb
 
-} {} {}} D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a01_hello_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a01_hello_tb.vhd
+} {} {}} D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
--- Compiling entity a01_hello_tb
--- Compiling architecture sim of a01_hello_tb
+-- Compiling entity a03_loop_tb
+-- Compiling architecture sim of a03_loop_tb
 
 } {} {}}
