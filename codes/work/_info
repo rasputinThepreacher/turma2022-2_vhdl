@@ -19,9 +19,9 @@ VM<:^hGi1GbnbZ=[XInRzF3
 !s100 8eVYaP8EX6onRb:a;hZFg1
 Z4 OV;C;10.5b;63
 32
-Z5 !s110 1662116213
+Z5 !s110 1663153275
 !i10b 1
-Z6 !s108 1662116213.000000
+Z6 !s108 1663153275.000000
 Z7 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a01_hello_tb.vhd|
 Z8 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a01_hello_tb.vhd|
 !i113 1
@@ -54,11 +54,11 @@ VUY8OCe1@l@kj8kd9K]m6L3
 !s100 ??mf^GjbXmOLABFoHYeJH2
 R4
 32
-R5
+Z14 !s110 1663153276
 !i10b 1
-R6
-Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a02_wait_for_tb.vhd|
-Z15 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a02_wait_for_tb.vhd|
+Z15 !s108 1663153276.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a02_wait_for_tb.vhd|
+Z17 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a02_wait_for_tb.vhd|
 !i113 1
 R9
 R10
@@ -70,30 +70,30 @@ VjXjk]d=6haThDbU6O1=Fm3
 !s100 UF;cOBBjO@Z?[f^z6:jXL0
 R4
 32
-R5
-!i10b 1
-R6
 R14
+!i10b 1
 R15
+R16
+R17
 !i113 1
 R9
 R10
 Ea03_loop_tb
-Z16 w1661945647
+Z18 w1661945647
 R1
-Z17 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd
-Z18 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd
+Z19 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd
+Z20 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd
 l0
 L1
 V?HeOUdzo8Lf[L:g_[P;8E2
 !s100 KOWabjHL=7RPETNVl1D2=0
 R4
 32
-R5
+R14
 !i10b 1
-R6
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd|
-Z20 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd|
+R15
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd|
+Z22 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a03_loop_tb.vhd|
 !i113 1
 R9
 R10
@@ -105,30 +105,30 @@ V7Ai>n=?ES6JXKWT36nKC<3
 !s100 6gGBZ9@:1:c2XcNbFDWL21
 R4
 32
-R5
+R14
 !i10b 1
-R6
-R19
-R20
+R15
+R21
+R22
 !i113 1
 R9
 R10
 Ea04_for_tb
-Z21 w1662115635
+Z23 w1662115635
 R1
-Z22 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a04_for_tb.vhd
-Z23 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a04_for_tb.vhd
+Z24 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a04_for_tb.vhd
+Z25 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a04_for_tb.vhd
 l0
 L1
 VK6MO>lk_HCOXB]VE^z7ng3
 !s100 5WAX?JBEAfa;6EE=f0[9`0
 R4
 32
-R5
+R14
 !i10b 1
-R6
-Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a04_for_tb.vhd|
-Z25 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a04_for_tb.vhd|
+R15
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a04_for_tb.vhd|
+Z27 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a04_for_tb.vhd|
 !i113 1
 R9
 R10
@@ -140,28 +140,28 @@ V=gD6mzZn<e8G3l31VR<2S2
 !s100 873m<OGc=ZbA^@`e;AlcI2
 R4
 32
-R5
+R14
 !i10b 1
-R6
-R24
-R25
+R15
+R26
+R27
 !i113 1
 R9
 R10
 Ea05_while_tb
-Z26 w1661946635
+Z28 w1661946635
 R1
-Z27 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a05_while_tb.vhd
-Z28 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a05_while_tb.vhd
+Z29 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a05_while_tb.vhd
+Z30 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a05_while_tb.vhd
 l0
 L1
 Vk=@`>^_KI[CiEd8DFO^bz1
 !s100 X0=TTlS_SMFek1>7n06mC1
 R4
 32
-Z29 !s110 1662116214
+R14
 !i10b 1
-Z30 !s108 1662116214.000000
+R15
 Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a05_while_tb.vhd|
 Z32 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a05_while_tb.vhd|
 !i113 1
@@ -175,9 +175,9 @@ V>`I1_G?@[Rjhnz@NOAk1b1
 !s100 _9gSdSHWoi[_>J@R7G@DZ1
 R4
 32
-R29
+R14
 !i10b 1
-R30
+R15
 R31
 R32
 !i113 1
@@ -194,9 +194,9 @@ VKK^6^LF>`HNG@k_2=hN8Q3
 !s100 :ZIT]X=]4>>Rl<K1oDkV=0
 R4
 32
-R29
+R14
 !i10b 1
-R30
+R15
 Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a06_signal_variable_tb.vhd|
 Z37 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a06_signal_variable_tb.vhd|
 !i113 1
@@ -210,9 +210,9 @@ V]gCY8neeglDCdnWN<l[Jf2
 !s100 I`hUS;9>De3_7_0z_m:jj2
 R4
 32
-R29
+R14
 !i10b 1
-R30
+R15
 R36
 R37
 !i113 1
@@ -264,11 +264,11 @@ V6USm?^bIOVk2Li[4dRk0M1
 !s100 BAMZK=[k546kVPoRI8?ah3
 R4
 32
-Z48 !s110 1662118363
+R14
 !i10b 1
-Z49 !s108 1662118363.000000
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a08_if_tb.vhd|
-Z51 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a08_if_tb.vhd|
+R15
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a08_if_tb.vhd|
+Z49 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a08_if_tb.vhd|
 !i113 1
 R9
 R10
@@ -280,38 +280,38 @@ VazS:Mafn7:zedMdGCH0k31
 !s100 =Bf^ZzR;:9]m]OAneZ<EH1
 R4
 32
-R48
+R14
 !i10b 1
+R15
+R48
 R49
-R50
-R51
 !i113 1
 R9
 R10
 Ea10_std_logic_tb
-Z52 w1662119069
-Z53 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z54 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z50 w1662119069
+Z51 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z52 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R1
-Z55 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a10_std_logic_tb.vhd
-Z56 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a10_std_logic_tb.vhd
+Z53 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a10_std_logic_tb.vhd
+Z54 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a10_std_logic_tb.vhd
 l0
 L4
 V9l3]XhozEo87Z@oGE6Y5>0
 !s100 0TCmC[^WHC78R7PMmMTX:3
 R4
 32
-Z57 !s110 1662119106
+R14
 !i10b 1
-Z58 !s108 1662119106.000000
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a10_std_logic_tb.vhd|
-Z60 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a10_std_logic_tb.vhd|
+R15
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a10_std_logic_tb.vhd|
+Z56 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a10_std_logic_tb.vhd|
 !i113 1
 R9
 R10
 Asim
-R53
-R54
+R51
+R52
 DEx4 work 16 a10_std_logic_tb 0 22 9l3]XhozEo87Z@oGE6Y5>0
 l11
 L7
@@ -319,11 +319,91 @@ VPUn27DWYg_>mmaljQ5WUN1
 !s100 eaF4V>m?az^?efW0QVLfN1
 R4
 32
-R57
+R14
 !i10b 1
-R58
-R59
+R15
+R55
+R56
+!i113 1
+R9
+R10
+Ea11_slv_tb
+Z57 w1663156280
+R51
+R52
+R1
+Z58 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a11_slv_tb.vhd
+Z59 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a11_slv_tb.vhd
+l0
+L4
+VMS8hM:k0CSkkQJlCXn9l@2
+!s100 P5cIH^kab43NE9ZfFJSL73
+R4
+32
+Z60 !s110 1663156362
+!i10b 1
+Z61 !s108 1663156362.000000
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a11_slv_tb.vhd|
+Z63 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a11_slv_tb.vhd|
+!i113 1
+R9
+R10
+Asim
+R51
+R52
+DEx4 work 10 a11_slv_tb 0 22 MS8hM:k0CSkkQJlCXn9l@2
+l16
+L7
+VP^JOggPAaXImZfQ?B=Re30
+!s100 8CPXCTRX8@lX[SidL_zAO1
+R4
+32
 R60
+!i10b 1
+R61
+R62
+R63
+!i113 1
+R9
+R10
+Ea12_sig_unsig_tb
+Z64 w1663156936
+Z65 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R51
+R52
+R1
+Z66 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a12_sig_unsig_tb.vhd
+Z67 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a12_sig_unsig_tb.vhd
+l0
+L5
+Vba`R1AhBR7U@ETDHdUZi>3
+!s100 ^8T:H>Z[74DkV;odO56730
+R4
+32
+Z68 !s110 1663157009
+!i10b 1
+Z69 !s108 1663157009.000000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a12_sig_unsig_tb.vhd|
+Z71 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a12_sig_unsig_tb.vhd|
+!i113 1
+R9
+R10
+Asim
+R65
+R51
+R52
+DEx4 work 16 a12_sig_unsig_tb 0 22 ba`R1AhBR7U@ETDHdUZi>3
+l13
+L8
+VM7NKl[bDH[g63DmU9Y9PC2
+!s100 8NNQ_:iA^31:Z@6jd@5>D1
+R4
+32
+R68
+!i10b 1
+R69
+R70
+R71
 !i113 1
 R9
 R10
