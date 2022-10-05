@@ -855,3 +855,82 @@ R139
 !i113 1
 R9
 R10
+Ea19_timer
+Z140 w1664968801
+R53
+R54
+R1
+Z141 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a19_timer.vhd
+Z142 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a19_timer.vhd
+l0
+L4
+Vi@efh6O>1Df:Hi6RUd>cS0
+!s100 9CARdi7F0Il7ofWBShW<>0
+R4
+32
+Z143 !s110 1664969362
+!i10b 1
+Z144 !s108 1664969362.000000
+Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a19_timer.vhd|
+Z146 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a19_timer.vhd|
+!i113 1
+R9
+R10
+Artl
+R53
+R54
+Z147 DEx4 work 9 a19_timer 0 22 i@efh6O>1Df:Hi6RUd>cS0
+l35
+L13
+V3EKDbDc[K?SR3a[EmIXT;2
+!s100 0G0c>Z=<J>Ca=Cz0N4PQI0
+R4
+32
+R143
+!i10b 1
+R144
+R145
+R146
+!i113 1
+R9
+R10
+Ea19_timer_tb
+Z148 w1664969355
+R53
+R54
+R1
+Z149 8D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a19_timer_tb.vhd
+Z150 FD:/OneDrive/Repositories/turma2022-1_vhdl/codes/a19_timer_tb.vhd
+l0
+L4
+VfXlJ1`[o0MolMZd:hgBTE2
+!s100 ^>?3;1]zS8GLQ?YffdQ7G3
+R4
+32
+Z151 !s110 1664969363
+!i10b 1
+Z152 !s108 1664969363.000000
+Z153 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a19_timer_tb.vhd|
+Z154 !s107 D:/OneDrive/Repositories/turma2022-1_vhdl/codes/a19_timer_tb.vhd|
+!i113 1
+R9
+R10
+Asim
+R147
+R53
+R54
+Z155 DEx4 work 12 a19_timer_tb 0 22 fXlJ1`[o0MolMZd:hgBTE2
+l17
+L7
+V[hD=P:MhA8Lh:>^_d__4B2
+!s100 k09FfW:fIF?CoI^4::[YK1
+R4
+32
+R151
+!i10b 1
+R152
+R153
+R154
+!i113 1
+R9
+R10
