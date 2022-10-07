@@ -1,0 +1,59 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+-- Contar no display de sete segmentos de 0 a 9
+entity contador is
+	port(
+		clk, rst	:	in		std_logic;
+		hex		:	out	std_logic_vector(0 to 6)
+	);
+end entity;
+
+architecture rtl of contador is
+
+	signal i	:	unsigned(3 downto 0) := "0000";
+	
+	procedure decodificando(
+        constant valor  :   in   unsigned(3 downto 0);
+        signal   saida  :   out  std_logic_vector(0 to 6)
+    ) is
+    begin
+        case(valor) is
+        
+            when "0000" => saida <= not "1111110";
+            when "0001" => saida <= not "0110000";
+            when "0010" => saida <= not "1101101";
+            when "0011" => saida <= not "1111001";
+            when "0100" => saida <= not "0110011";
+            when "0101" => saida <= not "1011011";
+            when "0110" => saida <= not "1011111";
+            when "0111" => saida <= not "1110000";
+            when "1000" => saida <= not "1111111";
+            when "1001" => saida <= not "1111011";
+        
+            when others => saida <= "0000000";
+        
+        end case;
+    
+    end;
+
+begin
+
+	process(clk, rst) is
+	begin
+		if rst = '0' then
+			i <= "0000";
+		elsif rising_edge(clk) then
+			i <= i + 1;
+			if i = "1001" then -- se igual a 9
+				i <= "0000";
+			end if;
+		end if;
+	end process;
+	
+	decodificando(i, hex);
+
+end architecture;
+

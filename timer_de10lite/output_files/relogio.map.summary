@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Oct 07 10:04:20 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : relogio
+Top-level Entity Name : a19_timer_top
+Family : MAX 10
+Total logic elements : 7,118
+    Total combinational functions : 7,118
+    Dedicated logic registers : 128
+Total registers : 128
+Total pins : 44
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
