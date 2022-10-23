@@ -1,9 +1,4 @@
-# turma2022-1_vhdl
+# turma2022-2_vhdl
  
- ## tttt
- 
- ginreig
- 
- - gregre
- - gergreg
+Códigos da turma de lógica Reconfigurável de 2022 / segundo semestre
  
