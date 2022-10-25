@@ -6,14 +6,12 @@ entity contador is
 	generic(
 		-- Número de bits do contador
 		n			:	integer := 10;
-
 		-- Período de contagem. O valor representa ciclos de clock
 		delay		:	integer := 25e6);
 
 	port(
 		-- Entradas
 		clk,nRst	:	in		std_logic;
-
 		-- Saída
 		q			:	out	unsigned(n - 1	downto 0));
 
