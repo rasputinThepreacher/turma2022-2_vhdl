@@ -12,7 +12,7 @@ entity a19_timer_top is
 end entity;
 
 architecture main of a19_timer_top is
-    signal a, b, c  :   integer;
+    signal a, b, c  :   integer range 0 to 60;
 begin
     decod_s:    entity work.a19_decod(rtl)
         port map(a, u_sec, d_sec);

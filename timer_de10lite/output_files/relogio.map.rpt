@@ -1,5 +1,5 @@
 Analysis & Synthesis report for relogio
-Fri Oct 07 10:04:21 2022
+Fri Oct 07 10:48:17 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -50,15 +50,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 07 10:04:20 2022           ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 07 10:48:17 2022           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; relogio                                         ;
 ; Top-level Entity Name              ; a19_timer_top                                   ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 7,118                                           ;
-;     Total combinational functions  ; 7,118                                           ;
-;     Dedicated logic registers      ; 128                                             ;
-; Total registers                    ; 128                                             ;
+; Total logic elements               ; 368                                             ;
+;     Total combinational functions  ; 368                                             ;
+;     Dedicated logic registers      ; 50                                              ;
+; Total registers                    ; 50                                              ;
 ; Total pins                         ; 44                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -168,107 +168,100 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                    ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
-; a19_timer_top.vhd                ; yes             ; User VHDL File               ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_timer_top.vhd      ;         ;
-; a19_timer.vhd                    ; yes             ; User VHDL File               ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_timer.vhd          ;         ;
-; a19_decod.vhd                    ; yes             ; User VHDL File               ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_decod.vhd          ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/abs_divider.inc               ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc           ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/aglobal181.inc                ;         ;
-; db/lpm_divide_25o.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_divide_25o.tdf  ;         ;
-; db/abs_divider_4dg.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/abs_divider_4dg.tdf ;         ;
-; db/alt_u_div_ske.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/alt_u_div_ske.tdf   ;         ;
-; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/add_sub_t3c.tdf     ;         ;
-; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/add_sub_u3c.tdf     ;         ;
-; db/lpm_abs_8b9.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_abs_8b9.tdf     ;         ;
-; db/lpm_divide_fbo.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_divide_fbo.tdf  ;         ;
-; db/abs_divider_kbg.tdf           ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/abs_divider_kbg.tdf ;         ;
-; db/alt_u_div_she.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/alt_u_div_she.tdf   ;         ;
-; db/lpm_abs_o99.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_abs_o99.tdf     ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
+; a19_timer_top.vhd                ; yes             ; User VHDL File               ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_timer_top.vhd          ;         ;
+; a19_timer.vhd                    ; yes             ; User VHDL File               ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_timer.vhd              ;         ;
+; a19_decod.vhd                    ; yes             ; User VHDL File               ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_decod.vhd              ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/lpm_divide.tdf                    ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/abs_divider.inc                   ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/sign_div_unsign.inc               ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga/18.1/quartus/libraries/megafunctions/aglobal181.inc                    ;         ;
+; db/lpm_divide_ckl.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_divide_ckl.tdf      ;         ;
+; db/sign_div_unsign_bkh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/sign_div_unsign_bkh.tdf ;         ;
+; db/alt_u_div_0fe.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/alt_u_div_0fe.tdf       ;         ;
+; db/add_sub_t3c.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/add_sub_t3c.tdf         ;         ;
+; db/add_sub_u3c.tdf               ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/add_sub_u3c.tdf         ;         ;
+; db/lpm_divide_7sl.tdf            ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_divide_7sl.tdf      ;         ;
+; db/sign_div_unsign_9kh.tdf       ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/sign_div_unsign_9kh.tdf ;         ;
+; db/alt_u_div_see.tdf             ; yes             ; Auto-Generated Megafunction  ; D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/alt_u_div_see.tdf       ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                ;
-+---------------------------------------------+------------------------------+
-; Resource                                    ; Usage                        ;
-+---------------------------------------------+------------------------------+
-; Estimated Total logic elements              ; 7,118                        ;
-;                                             ;                              ;
-; Total combinational functions               ; 7118                         ;
-; Logic element usage by number of LUT inputs ;                              ;
-;     -- 4 input functions                    ; 2362                         ;
-;     -- 3 input functions                    ; 2105                         ;
-;     -- <=2 input functions                  ; 2651                         ;
-;                                             ;                              ;
-; Logic elements by mode                      ;                              ;
-;     -- normal mode                          ; 4723                         ;
-;     -- arithmetic mode                      ; 2395                         ;
-;                                             ;                              ;
-; Total registers                             ; 128                          ;
-;     -- Dedicated logic registers            ; 128                          ;
-;     -- I/O registers                        ; 0                            ;
-;                                             ;                              ;
-; I/O pins                                    ; 44                           ;
-;                                             ;                              ;
-; Embedded Multiplier 9-bit elements          ; 0                            ;
-;                                             ;                              ;
-; Maximum fan-out node                        ; a19_timer:timer_0|s[31]~reg0 ;
-; Maximum fan-out                             ; 207                          ;
-; Total fan-out                               ; 21165                        ;
-; Average fan-out                             ; 2.89                         ;
-+---------------------------------------------+------------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 368       ;
+;                                             ;           ;
+; Total combinational functions               ; 368       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 87        ;
+;     -- 3 input functions                    ; 75        ;
+;     -- <=2 input functions                  ; 206       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 253       ;
+;     -- arithmetic mode                      ; 115       ;
+;                                             ;           ;
+; Total registers                             ; 50        ;
+;     -- Dedicated logic registers            ; 50        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 44        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 50        ;
+; Total fan-out                               ; 1181      ;
+; Average fan-out                             ; 2.33      ;
++---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                            ;
-+------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                           ; Entity Name     ; Library Name ;
-+------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |a19_timer_top                           ; 7118 (0)            ; 128 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 44   ; 0            ; 0          ; |a19_timer_top                                                                                                                ; a19_timer_top   ; work         ;
-;    |a19_decod:decod_h|                   ; 2279 (125)          ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h                                                                                              ; a19_decod       ; work         ;
-;       |lpm_divide:Div0|                  ; 485 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_fbo:auto_generated| ; 485 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_fbo:auto_generated                                                ; lpm_divide_fbo  ; work         ;
-;             |abs_divider_kbg:divider|    ; 485 (36)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider                        ; abs_divider_kbg ; work         ;
-;                |alt_u_div_she:divider|   ; 449 (449)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider|alt_u_div_she:divider  ; alt_u_div_she   ; work         ;
-;       |lpm_divide:Mod0|                  ; 1669 (0)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_25o:auto_generated| ; 1669 (0)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_25o:auto_generated                                                ; lpm_divide_25o  ; work         ;
-;             |abs_divider_4dg:divider|    ; 1669 (64)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider                        ; abs_divider_4dg ; work         ;
-;                |alt_u_div_ske:divider|   ; 1566 (1566)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider  ; alt_u_div_ske   ; work         ;
-;                |lpm_abs_8b9:my_abs_num|  ; 39 (39)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|lpm_abs_8b9:my_abs_num ; lpm_abs_8b9     ; work         ;
-;    |a19_decod:decod_m|                   ; 2279 (125)          ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m                                                                                              ; a19_decod       ; work         ;
-;       |lpm_divide:Div0|                  ; 485 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_fbo:auto_generated| ; 485 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_fbo:auto_generated                                                ; lpm_divide_fbo  ; work         ;
-;             |abs_divider_kbg:divider|    ; 485 (36)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider                        ; abs_divider_kbg ; work         ;
-;                |alt_u_div_she:divider|   ; 449 (449)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider|alt_u_div_she:divider  ; alt_u_div_she   ; work         ;
-;       |lpm_divide:Mod0|                  ; 1669 (0)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_25o:auto_generated| ; 1669 (0)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_25o:auto_generated                                                ; lpm_divide_25o  ; work         ;
-;             |abs_divider_4dg:divider|    ; 1669 (64)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider                        ; abs_divider_4dg ; work         ;
-;                |alt_u_div_ske:divider|   ; 1566 (1566)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider  ; alt_u_div_ske   ; work         ;
-;                |lpm_abs_8b9:my_abs_num|  ; 39 (39)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|lpm_abs_8b9:my_abs_num ; lpm_abs_8b9     ; work         ;
-;    |a19_decod:decod_s|                   ; 2272 (127)          ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s                                                                                              ; a19_decod       ; work         ;
-;       |lpm_divide:Div0|                  ; 483 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_fbo:auto_generated| ; 483 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_fbo:auto_generated                                                ; lpm_divide_fbo  ; work         ;
-;             |abs_divider_kbg:divider|    ; 483 (34)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider                        ; abs_divider_kbg ; work         ;
-;                |alt_u_div_she:divider|   ; 449 (449)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider|alt_u_div_she:divider  ; alt_u_div_she   ; work         ;
-;       |lpm_divide:Mod0|                  ; 1662 (0)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_25o:auto_generated| ; 1662 (0)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_25o:auto_generated                                                ; lpm_divide_25o  ; work         ;
-;             |abs_divider_4dg:divider|    ; 1662 (64)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider                        ; abs_divider_4dg ; work         ;
-;                |alt_u_div_ske:divider|   ; 1566 (1566)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider  ; alt_u_div_ske   ; work         ;
-;                |lpm_abs_8b9:my_abs_num|  ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|lpm_abs_8b9:my_abs_num ; lpm_abs_8b9     ; work         ;
-;    |a19_timer:timer_0|                   ; 288 (288)           ; 128 (128)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_timer:timer_0                                                                                              ; a19_timer       ; work         ;
-+------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                    ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                              ; Entity Name         ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |a19_timer_top                            ; 368 (0)             ; 50 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 44   ; 0            ; 0          ; |a19_timer_top                                                                                                                   ; a19_timer_top       ; work         ;
+;    |a19_decod:decod_h|                    ; 90 (23)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h                                                                                                 ; a19_decod           ; work         ;
+;       |lpm_divide:Div0|                   ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_7sl:auto_generated|  ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_7sl:auto_generated                                                   ; lpm_divide_7sl      ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;                |alt_u_div_see:divider|    ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_see:divider ; alt_u_div_see       ; work         ;
+;       |lpm_divide:Mod0|                   ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 37 (37)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |a19_decod:decod_m|                    ; 90 (23)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m                                                                                                 ; a19_decod           ; work         ;
+;       |lpm_divide:Div0|                   ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_7sl:auto_generated|  ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_7sl:auto_generated                                                   ; lpm_divide_7sl      ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;                |alt_u_div_see:divider|    ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_see:divider ; alt_u_div_see       ; work         ;
+;       |lpm_divide:Mod0|                   ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 37 (37)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |a19_decod:decod_s|                    ; 90 (23)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s                                                                                                 ; a19_decod           ; work         ;
+;       |lpm_divide:Div0|                   ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_7sl:auto_generated|  ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_7sl:auto_generated                                                   ; lpm_divide_7sl      ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 30 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;                |alt_u_div_see:divider|    ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_see:divider ; alt_u_div_see       ; work         ;
+;       |lpm_divide:Mod0|                   ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 37 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 37 (37)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |a19_timer:timer_0|                    ; 98 (98)             ; 50 (50)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |a19_timer_top|a19_timer:timer_0                                                                                                 ; a19_timer           ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -277,25 +270,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 128   ;
+; Total registers                              ; 50    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 128   ;
+; Number of registers using Asynchronous Clear ; 50    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |a19_timer_top|a19_timer:timer_0|s[29]~reg0 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |a19_timer_top|a19_timer:timer_0|m[18]~reg0 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |a19_timer_top|a19_timer:timer_0|h[16]~reg0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |a19_timer_top|a19_timer:timer_0|s[5]~reg0 ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |a19_timer_top|a19_timer:timer_0|m[4]~reg0 ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |a19_timer_top|a19_timer:timer_0|h[5]~reg0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------+
@@ -313,14 +306,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                     ;
 +------------------------+----------------+------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                  ;
-; LPM_WIDTHD             ; 32             ; Untyped                                  ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_WIDTHN             ; 6              ; Untyped                                  ;
+; LPM_WIDTHD             ; 6              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                  ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
-; CBXI_PARAMETER         ; lpm_divide_25o ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                                  ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
@@ -336,14 +329,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                     ;
 +------------------------+----------------+------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                  ;
-; LPM_WIDTHD             ; 5              ; Untyped                                  ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_WIDTHN             ; 6              ; Untyped                                  ;
+; LPM_WIDTHD             ; 4              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                  ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
-; CBXI_PARAMETER         ; lpm_divide_fbo ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_7sl ; Untyped                                  ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
@@ -359,14 +352,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                     ;
 +------------------------+----------------+------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                  ;
-; LPM_WIDTHD             ; 32             ; Untyped                                  ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_WIDTHN             ; 6              ; Untyped                                  ;
+; LPM_WIDTHD             ; 6              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                  ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
-; CBXI_PARAMETER         ; lpm_divide_25o ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                                  ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
@@ -382,14 +375,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                     ;
 +------------------------+----------------+------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                  ;
-; LPM_WIDTHD             ; 5              ; Untyped                                  ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_WIDTHN             ; 6              ; Untyped                                  ;
+; LPM_WIDTHD             ; 4              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                  ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
-; CBXI_PARAMETER         ; lpm_divide_fbo ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_7sl ; Untyped                                  ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
@@ -405,14 +398,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                     ;
 +------------------------+----------------+------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                  ;
-; LPM_WIDTHD             ; 32             ; Untyped                                  ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_WIDTHN             ; 6              ; Untyped                                  ;
+; LPM_WIDTHD             ; 6              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                  ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
-; CBXI_PARAMETER         ; lpm_divide_25o ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_ckl ; Untyped                                  ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
@@ -428,14 +421,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+----------------+------------------------------------------+
 ; Parameter Name         ; Value          ; Type                                     ;
 +------------------------+----------------+------------------------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                                  ;
-; LPM_WIDTHD             ; 5              ; Untyped                                  ;
-; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                                  ;
-; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                                  ;
+; LPM_WIDTHN             ; 6              ; Untyped                                  ;
+; LPM_WIDTHD             ; 4              ; Untyped                                  ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                  ;
 ; LPM_PIPELINE           ; 0              ; Untyped                                  ;
-; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                                  ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                  ;
 ; MAXIMIZE_SPEED         ; 5              ; Untyped                                  ;
-; CBXI_PARAMETER         ; lpm_divide_fbo ; Untyped                                  ;
+; CBXI_PARAMETER         ; lpm_divide_7sl ; Untyped                                  ;
 ; CARRY_CHAIN            ; MANUAL         ; Untyped                                  ;
 ; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                  ;
 ; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                               ;
@@ -452,22 +445,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 44                          ;
-; cycloneiii_ff         ; 128                         ;
-;     CLR               ; 128                         ;
-; cycloneiii_lcell_comb ; 7130                        ;
-;     arith             ; 2395                        ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 313                         ;
-;         3 data inputs ; 2079                        ;
-;     normal            ; 4735                        ;
-;         0 data inputs ; 180                         ;
-;         1 data inputs ; 19                          ;
-;         2 data inputs ; 2148                        ;
-;         3 data inputs ; 26                          ;
-;         4 data inputs ; 2362                        ;
+; cycloneiii_ff         ; 50                          ;
+;     CLR               ; 50                          ;
+; cycloneiii_lcell_comb ; 374                         ;
+;     arith             ; 115                         ;
+;         2 data inputs ; 64                          ;
+;         3 data inputs ; 51                          ;
+;     normal            ; 259                         ;
+;         0 data inputs ; 18                          ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 120                         ;
+;         3 data inputs ; 24                          ;
+;         4 data inputs ; 87                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 133.30                      ;
-; Average LUT depth     ; 115.17                      ;
+; Max LUT depth         ; 10.20                       ;
+; Average LUT depth     ; 7.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -476,7 +468,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -486,7 +478,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Fri Oct 07 10:03:56 2022
+    Info: Processing started: Fri Oct 07 10:48:01 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off relogio -c relogio
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -516,41 +508,33 @@ Info (278001): Inferred 6 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "a19_decod:decod_h|Div0" File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_decod.vhd Line: 42
 Info (12130): Elaborated megafunction instantiation "a19_decod:decod_s|lpm_divide:Mod0" File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_decod.vhd Line: 43
 Info (12133): Instantiated megafunction "a19_decod:decod_s|lpm_divide:Mod0" with the following parameter: File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_decod.vhd Line: 43
-    Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "32"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_25o.tdf
-    Info (12023): Found entity 1: lpm_divide_25o File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_divide_25o.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_4dg.tdf
-    Info (12023): Found entity 1: abs_divider_4dg File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/abs_divider_4dg.tdf Line: 26
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ske.tdf
-    Info (12023): Found entity 1: alt_u_div_ske File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/alt_u_div_ske.tdf Line: 26
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ckl.tdf
+    Info (12023): Found entity 1: lpm_divide_ckl File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_divide_ckl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/sign_div_unsign_bkh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0fe.tdf
+    Info (12023): Found entity 1: alt_u_div_0fe File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/alt_u_div_0fe.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
     Info (12023): Found entity 1: add_sub_t3c File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/add_sub_t3c.tdf Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
     Info (12023): Found entity 1: add_sub_u3c File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/add_sub_u3c.tdf Line: 22
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_8b9.tdf
-    Info (12023): Found entity 1: lpm_abs_8b9 File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_abs_8b9.tdf Line: 24
 Info (12130): Elaborated megafunction instantiation "a19_decod:decod_s|lpm_divide:Div0" File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_decod.vhd Line: 42
 Info (12133): Instantiated megafunction "a19_decod:decod_s|lpm_divide:Div0" with the following parameter: File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_decod.vhd Line: 42
-    Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "5"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "SIGNED"
-    Info (12134): Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_fbo.tdf
-    Info (12023): Found entity 1: lpm_divide_fbo File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_divide_fbo.tdf Line: 24
-Info (12021): Found 1 design units, including 1 entities, in source file db/abs_divider_kbg.tdf
-    Info (12023): Found entity 1: abs_divider_kbg File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/abs_divider_kbg.tdf Line: 28
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_she.tdf
-    Info (12023): Found entity 1: alt_u_div_she File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/alt_u_div_she.tdf Line: 26
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_abs_o99.tdf
-    Info (12023): Found entity 1: lpm_abs_o99 File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_abs_o99.tdf Line: 24
+    Info (12134): Parameter "LPM_WIDTHN" = "6"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7sl.tdf
+    Info (12023): Found entity 1: lpm_divide_7sl File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/lpm_divide_7sl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9kh File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/sign_div_unsign_9kh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_see.tdf
+    Info (12023): Found entity 1: alt_u_div_see File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/db/alt_u_div_see.tdf Line: 26
 Warning (12069): Ignored assignment(s) for "nRst[0]" because "nRst" is not a bus or array File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_timer_top.vhd Line: 7
-Info (13014): Ignored 186 buffer(s)
-    Info (13016): Ignored 186 CARRY_SUM buffer(s)
 Info (286030): Timing-Driven Synthesis is running
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
     Critical Warning (18010): Register a19_timer:timer_0|ticks[31] will power up to Low File: D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/a19_timer.vhd Line: 40
@@ -582,14 +566,14 @@ Warning (20013): Ignored 24 assignments for entity "DE10_LITE_Golden_Top" -- ent
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE10_LITE_Golden_Top -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 7162 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 412 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 42 output pins
-    Info (21061): Implemented 7118 logic cells
+    Info (21061): Implemented 368 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4846 megabytes
-    Info: Processing ended: Fri Oct 07 10:04:21 2022
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Fri Oct 07 10:48:17 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:31
 
 

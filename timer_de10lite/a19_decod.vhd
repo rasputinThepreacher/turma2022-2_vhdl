@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity a19_decod is
     port(
-        contador    :   in  integer;
+        contador    :   in  integer range 0 to 60;
         d0, d1      :   out unsigned(0 to 6)
     );
 end entity;
@@ -36,7 +36,7 @@ architecture rtl of a19_decod is
 begin
 
     process(contador) is
-        variable dezena, unidade :   integer;
+        variable dezena, unidade :   integer range 0 to 60;
     begin
 
         dezena := contador / 10;

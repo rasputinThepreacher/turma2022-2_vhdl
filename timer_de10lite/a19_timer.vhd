@@ -5,8 +5,8 @@ entity a19_timer is
     generic(clockFreq   :   integer := 50e6); -- 50 MHz
     port(
         clk, nRst   :   in      std_logic;
-        s, m        :   inout   integer;
-        h           :   inout   integer
+        s, m        :   inout   integer range 0 to 60;
+        h           :   inout   integer range 0 to 60
     );
 end entity;
 

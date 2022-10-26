@@ -17,16 +17,16 @@ architecture rtl of a19_decod is
     begin
         case(valor) is
         
-            when 0 => saida <= "1111110";
-            when 1 => saida <= "0110000";
-            when 2 => saida <= "1101101";
-            when 3 => saida <= "1111001";
-            when 4 => saida <= "0110011";
-            when 5 => saida <= "1011011";
-            when 6 => saida <= "1011111";
-            when 7 => saida <= "1110000";
-            when 8 => saida <= "1111111";
-            when 9 => saida <= "1111011";
+            when 0 => saida <= not "1111110";
+            when 1 => saida <= not "0110000";
+            when 2 => saida <= not "1101101";
+            when 3 => saida <= not "1111001";
+            when 4 => saida <= not "0110011";
+            when 5 => saida <= not "1011011";
+            when 6 => saida <= not "1011111";
+            when 7 => saida <= not "1110000";
+            when 8 => saida <= not "1111111";
+            when 9 => saida <= not "1111011";
         
             when others => saida <= "0000000";
         

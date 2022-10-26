@@ -1,5 +1,5 @@
 Fitter report for relogio
-Fri Oct 07 10:04:54 2022
+Fri Oct 07 10:48:30 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -66,17 +66,17 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Oct 07 10:04:54 2022           ;
+; Fitter Status                      ; Successful - Fri Oct 07 10:48:30 2022           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                      ; relogio                                         ;
 ; Top-level Entity Name              ; a19_timer_top                                   ;
 ; Family                             ; MAX 10                                          ;
 ; Device                             ; 10M50DAF484C6GES                                ;
 ; Timing Models                      ; Preliminary                                     ;
-; Total logic elements               ; 7,121 / 49,760 ( 14 % )                         ;
-;     Total combinational functions  ; 7,119 / 49,760 ( 14 % )                         ;
-;     Dedicated logic registers      ; 128 / 49,760 ( < 1 % )                          ;
-; Total registers                    ; 128                                             ;
+; Total logic elements               ; 369 / 49,760 ( < 1 % )                          ;
+;     Total combinational functions  ; 369 / 49,760 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 50 / 49,760 ( < 1 % )                           ;
+; Total registers                    ; 50                                              ;
 ; Total pins                         ; 44 / 360 ( 12 % )                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                           ;
@@ -152,14 +152,13 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.41        ;
+; Average used               ; 1.05        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  13.8%      ;
-;     Processor 3            ;  13.7%      ;
-;     Processor 4            ;  13.7%      ;
+;     Processor 2            ;   1.8%      ;
+;     Processors 3-4         ;   1.8%      ;
 +----------------------------+-------------+
 
 
@@ -312,19 +311,19 @@ refer to the applicable agreement for further details.
 +----------+----------------+--------------+-----------------+---------------+----------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Incremental Compilation Preservation Summary                                                      ;
-+---------------------+---------------------+----------------------------+--------------------------+
-; Type                ; Total [A + B]       ; From Design Partitions [A] ; From Rapid Recompile [B] ;
-+---------------------+---------------------+----------------------------+--------------------------+
-; Placement (by node) ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 7356 ) ; 0.00 % ( 0 / 7356 )        ; 0.00 % ( 0 / 7356 )      ;
-;     -- Achieved     ; 0.00 % ( 0 / 7356 ) ; 0.00 % ( 0 / 7356 )        ; 0.00 % ( 0 / 7356 )      ;
-;                     ;                     ;                            ;                          ;
-; Routing (by net)    ;                     ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-;     -- Achieved     ; 0.00 % ( 0 / 0 )    ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
-+---------------------+---------------------+----------------------------+--------------------------+
++--------------------------------------------------------------------------------------------------+
+; Incremental Compilation Preservation Summary                                                     ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
++---------------------+--------------------+----------------------------+--------------------------+
+; Placement (by node) ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 528 ) ; 0.00 % ( 0 / 528 )         ; 0.00 % ( 0 / 528 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 528 ) ; 0.00 % ( 0 / 528 )         ; 0.00 % ( 0 / 528 )       ;
+;                     ;                    ;                            ;                          ;
+; Routing (by net)    ;                    ;                            ;                          ;
+;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
+;     -- Achieved     ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
++---------------------+--------------------+----------------------------+--------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -342,7 +341,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 7340 )   ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 512 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -353,57 +352,57 @@ refer to the applicable agreement for further details.
 The pin-out file can be found in D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/output_files/relogio.pin.
 
 
-+-----------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                         ;
-+---------------------------------------------+-------------------------+
-; Resource                                    ; Usage                   ;
-+---------------------------------------------+-------------------------+
-; Total logic elements                        ; 7,121 / 49,760 ( 14 % ) ;
-;     -- Combinational with no register       ; 6993                    ;
-;     -- Register only                        ; 2                       ;
-;     -- Combinational with a register        ; 126                     ;
-;                                             ;                         ;
-; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 2362                    ;
-;     -- 3 input functions                    ; 2105                    ;
-;     -- <=2 input functions                  ; 2652                    ;
-;     -- Register only                        ; 2                       ;
-;                                             ;                         ;
-; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 4724                    ;
-;     -- arithmetic mode                      ; 2395                    ;
-;                                             ;                         ;
-; Total registers*                            ; 128 / 51,509 ( < 1 % )  ;
-;     -- Dedicated logic registers            ; 128 / 49,760 ( < 1 % )  ;
-;     -- I/O registers                        ; 0 / 1,749 ( 0 % )       ;
-;                                             ;                         ;
-; Total LABs:  partially or completely used   ; 511 / 3,110 ( 16 % )    ;
-; Virtual pins                                ; 0                       ;
-; I/O pins                                    ; 44 / 360 ( 12 % )       ;
-;     -- Clock pins                           ; 1 / 8 ( 13 % )          ;
-;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )         ;
-;                                             ;                         ;
-; M9Ks                                        ; 0 / 182 ( 0 % )         ;
-; UFM blocks                                  ; 0 / 1 ( 0 % )           ;
-; ADC blocks                                  ; 0 / 2 ( 0 % )           ;
-; Total block memory bits                     ; 0 / 1,677,312 ( 0 % )   ;
-; Total block memory implementation bits      ; 0 / 1,677,312 ( 0 % )   ;
-; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )         ;
-; PLLs                                        ; 0 / 4 ( 0 % )           ;
-; Global signals                              ; 2                       ;
-;     -- Global clocks                        ; 2 / 20 ( 10 % )         ;
-; JTAGs                                       ; 0 / 1 ( 0 % )           ;
-; CRC blocks                                  ; 0 / 1 ( 0 % )           ;
-; Remote update blocks                        ; 0 / 1 ( 0 % )           ;
-; Oscillator blocks                           ; 0 / 1 ( 0 % )           ;
-; Impedance control blocks                    ; 0 / 1 ( 0 % )           ;
-; Average interconnect usage (total/H/V)      ; 3.2% / 2.8% / 3.8%      ;
-; Peak interconnect usage (total/H/V)         ; 19.1% / 17.3% / 21.7%   ;
-; Maximum fan-out                             ; 207                     ;
-; Highest non-global fan-out                  ; 207                     ;
-; Total fan-out                               ; 21180                   ;
-; Average fan-out                             ; 2.88                    ;
-+---------------------------------------------+-------------------------+
++----------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                        ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Total logic elements                        ; 369 / 49,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 319                    ;
+;     -- Register only                        ; 0                      ;
+;     -- Combinational with a register        ; 50                     ;
+;                                             ;                        ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 87                     ;
+;     -- 3 input functions                    ; 75                     ;
+;     -- <=2 input functions                  ; 207                    ;
+;     -- Register only                        ; 0                      ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 254                    ;
+;     -- arithmetic mode                      ; 115                    ;
+;                                             ;                        ;
+; Total registers*                            ; 50 / 51,509 ( < 1 % )  ;
+;     -- Dedicated logic registers            ; 50 / 49,760 ( < 1 % )  ;
+;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
+;                                             ;                        ;
+; Total LABs:  partially or completely used   ; 27 / 3,110 ( < 1 % )   ;
+; Virtual pins                                ; 0                      ;
+; I/O pins                                    ; 44 / 360 ( 12 % )      ;
+;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
+;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )        ;
+;                                             ;                        ;
+; M9Ks                                        ; 0 / 182 ( 0 % )        ;
+; UFM blocks                                  ; 0 / 1 ( 0 % )          ;
+; ADC blocks                                  ; 0 / 2 ( 0 % )          ;
+; Total block memory bits                     ; 0 / 1,677,312 ( 0 % )  ;
+; Total block memory implementation bits      ; 0 / 1,677,312 ( 0 % )  ;
+; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )        ;
+; PLLs                                        ; 0 / 4 ( 0 % )          ;
+; Global signals                              ; 2                      ;
+;     -- Global clocks                        ; 2 / 20 ( 10 % )        ;
+; JTAGs                                       ; 0 / 1 ( 0 % )          ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
+; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
+; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
+; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%     ;
+; Peak interconnect usage (total/H/V)         ; 1.6% / 1.4% / 1.7%     ;
+; Maximum fan-out                             ; 50                     ;
+; Highest non-global fan-out                  ; 18                     ;
+; Total fan-out                               ; 1194                   ;
+; Average fan-out                             ; 2.26                   ;
++---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
@@ -415,26 +414,26 @@ The pin-out file can be found in D:/OneDrive/Repositories/turma2022-1_vhdl/timer
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 7121 / 49760 ( 14 % ) ; 0 / 49760 ( 0 % )              ;
-;     -- Combinational with no register       ; 6993                  ; 0                              ;
-;     -- Register only                        ; 2                     ; 0                              ;
-;     -- Combinational with a register        ; 126                   ; 0                              ;
+; Total logic elements                        ; 369 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 319                   ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
+;     -- Combinational with a register        ; 50                    ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 2362                  ; 0                              ;
-;     -- 3 input functions                    ; 2105                  ; 0                              ;
-;     -- <=2 input functions                  ; 2652                  ; 0                              ;
-;     -- Register only                        ; 2                     ; 0                              ;
+;     -- 4 input functions                    ; 87                    ; 0                              ;
+;     -- 3 input functions                    ; 75                    ; 0                              ;
+;     -- <=2 input functions                  ; 207                   ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 4724                  ; 0                              ;
-;     -- arithmetic mode                      ; 2395                  ; 0                              ;
+;     -- normal mode                          ; 254                   ; 0                              ;
+;     -- arithmetic mode                      ; 115                   ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total registers                             ; 128                   ; 0                              ;
-;     -- Dedicated logic registers            ; 128 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+; Total registers                             ; 50                    ; 0                              ;
+;     -- Dedicated logic registers            ; 50 / 49760 ( < 1 % )  ; 0 / 49760 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 511 / 3110 ( 16 % )   ; 0 / 3110 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 27 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 44                    ; 0                              ;
@@ -452,8 +451,8 @@ The pin-out file can be found in D:/OneDrive/Repositories/turma2022-1_vhdl/timer
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 21186                 ; 8                              ;
-;     -- Registered Connections               ; 1489                  ; 0                              ;
+;     -- Total Connections                    ; 1200                  ; 8                              ;
+;     -- Registered Connections               ; 224                   ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
 ;     -- Top                                  ; 0                     ; 0                              ;
@@ -485,8 +484,8 @@ The pin-out file can be found in D:/OneDrive/Repositories/turma2022-1_vhdl/timer
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clk  ; P11   ; 3        ; 34           ; 0            ; 28           ; 128                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
-; nRst ; R11   ; 3        ; 31           ; 0            ; 0            ; 128                   ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
+; clk  ; P11   ; 3        ; 34           ; 0            ; 28           ; 50                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; 0         ;
+; nRst ; R11   ; 3        ; 31           ; 0            ; 0            ; 50                    ; 0                  ; yes    ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; 0         ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -1119,44 +1118,41 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------+-------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                               ;
-+------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node               ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                                                           ; Entity Name     ; Library Name ;
-+------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
-; |a19_timer_top                           ; 7121 (1)    ; 128 (0)                   ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 44   ; 0            ; 6993 (1)     ; 2 (0)             ; 126 (0)          ; 0          ; |a19_timer_top                                                                                                                ; a19_timer_top   ; work         ;
-;    |a19_decod:decod_h|                   ; 2279 (125)  ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2279 (125)   ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h                                                                                              ; a19_decod       ; work         ;
-;       |lpm_divide:Div0|                  ; 485 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 485 (0)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_fbo:auto_generated| ; 485 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 485 (0)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_fbo:auto_generated                                                ; lpm_divide_fbo  ; work         ;
-;             |abs_divider_kbg:divider|    ; 485 (36)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 485 (36)     ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider                        ; abs_divider_kbg ; work         ;
-;                |alt_u_div_she:divider|   ; 449 (449)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 449 (449)    ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider|alt_u_div_she:divider  ; alt_u_div_she   ; work         ;
-;       |lpm_divide:Mod0|                  ; 1669 (0)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1669 (0)     ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_25o:auto_generated| ; 1669 (0)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1669 (0)     ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_25o:auto_generated                                                ; lpm_divide_25o  ; work         ;
-;             |abs_divider_4dg:divider|    ; 1669 (64)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1669 (64)    ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider                        ; abs_divider_4dg ; work         ;
-;                |alt_u_div_ske:divider|   ; 1566 (1566) ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1566 (1566)  ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider  ; alt_u_div_ske   ; work         ;
-;                |lpm_abs_8b9:my_abs_num|  ; 39 (39)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 39 (39)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|lpm_abs_8b9:my_abs_num ; lpm_abs_8b9     ; work         ;
-;    |a19_decod:decod_m|                   ; 2279 (125)  ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2279 (125)   ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m                                                                                              ; a19_decod       ; work         ;
-;       |lpm_divide:Div0|                  ; 485 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 485 (0)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_fbo:auto_generated| ; 485 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 485 (0)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_fbo:auto_generated                                                ; lpm_divide_fbo  ; work         ;
-;             |abs_divider_kbg:divider|    ; 485 (36)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 485 (36)     ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider                        ; abs_divider_kbg ; work         ;
-;                |alt_u_div_she:divider|   ; 449 (449)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 449 (449)    ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider|alt_u_div_she:divider  ; alt_u_div_she   ; work         ;
-;       |lpm_divide:Mod0|                  ; 1669 (0)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1669 (0)     ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_25o:auto_generated| ; 1669 (0)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1669 (0)     ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_25o:auto_generated                                                ; lpm_divide_25o  ; work         ;
-;             |abs_divider_4dg:divider|    ; 1669 (64)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1669 (64)    ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider                        ; abs_divider_4dg ; work         ;
-;                |alt_u_div_ske:divider|   ; 1566 (1566) ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1566 (1566)  ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider  ; alt_u_div_ske   ; work         ;
-;                |lpm_abs_8b9:my_abs_num|  ; 39 (39)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 39 (39)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|lpm_abs_8b9:my_abs_num ; lpm_abs_8b9     ; work         ;
-;    |a19_decod:decod_s|                   ; 2272 (127)  ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2271 (127)   ; 0 (0)             ; 1 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s                                                                                              ; a19_decod       ; work         ;
-;       |lpm_divide:Div0|                  ; 483 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 483 (0)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_fbo:auto_generated| ; 483 (0)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 483 (0)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_fbo:auto_generated                                                ; lpm_divide_fbo  ; work         ;
-;             |abs_divider_kbg:divider|    ; 483 (34)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 483 (34)     ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider                        ; abs_divider_kbg ; work         ;
-;                |alt_u_div_she:divider|   ; 449 (449)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 449 (449)    ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_fbo:auto_generated|abs_divider_kbg:divider|alt_u_div_she:divider  ; alt_u_div_she   ; work         ;
-;       |lpm_divide:Mod0|                  ; 1662 (0)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1661 (0)     ; 0 (0)             ; 1 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0                                                                              ; lpm_divide      ; work         ;
-;          |lpm_divide_25o:auto_generated| ; 1662 (0)    ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1661 (0)     ; 0 (0)             ; 1 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_25o:auto_generated                                                ; lpm_divide_25o  ; work         ;
-;             |abs_divider_4dg:divider|    ; 1662 (64)   ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1661 (64)    ; 0 (0)             ; 1 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider                        ; abs_divider_4dg ; work         ;
-;                |alt_u_div_ske:divider|   ; 1566 (1566) ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1565 (1565)  ; 0 (0)             ; 1 (1)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|alt_u_div_ske:divider  ; alt_u_div_ske   ; work         ;
-;                |lpm_abs_8b9:my_abs_num|  ; 32 (32)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 32 (32)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_25o:auto_generated|abs_divider_4dg:divider|lpm_abs_8b9:my_abs_num ; lpm_abs_8b9     ; work         ;
-;    |a19_timer:timer_0|                   ; 291 (291)   ; 128 (128)                 ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 163 (163)    ; 2 (2)             ; 126 (126)        ; 0          ; |a19_timer_top|a19_timer:timer_0                                                                                              ; a19_timer       ; work         ;
-+------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                       ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node                ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                                                                                                              ; Entity Name         ; Library Name ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |a19_timer_top                            ; 369 (1)     ; 50 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 44   ; 0            ; 319 (1)      ; 0 (0)             ; 50 (0)           ; 0          ; |a19_timer_top                                                                                                                   ; a19_timer_top       ; work         ;
+;    |a19_decod:decod_h|                    ; 90 (23)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 90 (23)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h                                                                                                 ; a19_decod           ; work         ;
+;       |lpm_divide:Div0|                   ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_7sl:auto_generated|  ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_7sl:auto_generated                                                   ; lpm_divide_7sl      ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;                |alt_u_div_see:divider|    ; 30 (30)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_see:divider ; alt_u_div_see       ; work         ;
+;       |lpm_divide:Mod0|                   ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 37 (37)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (37)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_h|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |a19_decod:decod_m|                    ; 90 (23)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 90 (23)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m                                                                                                 ; a19_decod           ; work         ;
+;       |lpm_divide:Div0|                   ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_7sl:auto_generated|  ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_7sl:auto_generated                                                   ; lpm_divide_7sl      ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;                |alt_u_div_see:divider|    ; 30 (30)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_see:divider ; alt_u_div_see       ; work         ;
+;       |lpm_divide:Mod0|                   ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 37 (37)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (37)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_m|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |a19_decod:decod_s|                    ; 90 (23)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 90 (23)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s                                                                                                 ; a19_decod           ; work         ;
+;       |lpm_divide:Div0|                   ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_7sl:auto_generated|  ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_7sl:auto_generated                                                   ; lpm_divide_7sl      ; work         ;
+;             |sign_div_unsign_9kh:divider| ; 30 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider                       ; sign_div_unsign_9kh ; work         ;
+;                |alt_u_div_see:divider|    ; 30 (30)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 30 (30)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Div0|lpm_divide_7sl:auto_generated|sign_div_unsign_9kh:divider|alt_u_div_see:divider ; alt_u_div_see       ; work         ;
+;       |lpm_divide:Mod0|                   ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0                                                                                 ; lpm_divide          ; work         ;
+;          |lpm_divide_ckl:auto_generated|  ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_ckl:auto_generated                                                   ; lpm_divide_ckl      ; work         ;
+;             |sign_div_unsign_bkh:divider| ; 37 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (0)       ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider                       ; sign_div_unsign_bkh ; work         ;
+;                |alt_u_div_0fe:divider|    ; 37 (37)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 37 (37)      ; 0 (0)             ; 0 (0)            ; 0          ; |a19_timer_top|a19_decod:decod_s|lpm_divide:Mod0|lpm_divide_ckl:auto_generated|sign_div_unsign_bkh:divider|alt_u_div_0fe:divider ; alt_u_div_0fe       ; work         ;
+;    |a19_timer:timer_0|                    ; 98 (98)     ; 50 (50)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 48 (48)      ; 0 (0)             ; 50 (50)          ; 0          ; |a19_timer_top|a19_timer:timer_0                                                                                                 ; a19_timer           ; work         ;
++-------------------------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1227,8 +1223,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk  ; PIN_P11  ; 128     ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
-; nRst ; PIN_R11  ; 128     ; Async. clear ; yes    ; Global Clock         ; GCLK18           ; --                        ;
+; clk  ; PIN_P11  ; 50      ; Clock        ; yes    ; Global Clock         ; GCLK19           ; --                        ;
+; nRst ; PIN_R11  ; 50      ; Async. clear ; yes    ; Global Clock         ; GCLK18           ; --                        ;
 +------+----------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1237,8 +1233,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; clk  ; PIN_P11  ; 128     ; 24                                   ; Global Clock         ; GCLK19           ; --                        ;
-; nRst ; PIN_R11  ; 128     ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
+; clk  ; PIN_P11  ; 50      ; 15                                   ; Global Clock         ; GCLK19           ; --                        ;
+; nRst ; PIN_R11  ; 50      ; 0                                    ; Global Clock         ; GCLK18           ; --                        ;
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1247,155 +1243,147 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-------------------------+
 ; Routing Resource Type ; Usage                   ;
 +-----------------------+-------------------------+
-; Block interconnects   ; 9,108 / 148,641 ( 6 % ) ;
-; C16 interconnects     ; 56 / 5,382 ( 1 % )      ;
-; C4 interconnects      ; 4,193 / 106,704 ( 4 % ) ;
-; Direct links          ; 2,044 / 148,641 ( 1 % ) ;
+; Block interconnects   ; 318 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 2 / 5,382 ( < 1 % )     ;
+; C4 interconnects      ; 132 / 106,704 ( < 1 % ) ;
+; Direct links          ; 131 / 148,641 ( < 1 % ) ;
 ; Global clocks         ; 2 / 20 ( 10 % )         ;
-; Local interconnects   ; 1,836 / 49,760 ( 4 % )  ;
+; Local interconnects   ; 180 / 49,760 ( < 1 % )  ;
 ; NSLEEPs               ; 0 / 500 ( 0 % )         ;
-; R24 interconnects     ; 64 / 5,406 ( 1 % )      ;
-; R4 interconnects      ; 4,401 / 147,764 ( 3 % ) ;
+; R24 interconnects     ; 4 / 5,406 ( < 1 % )     ;
+; R4 interconnects      ; 154 / 147,764 ( < 1 % ) ;
 +-----------------------+-------------------------+
 
 
++----------------------------------------------------------------------------+
+; LAB Logic Elements                                                         ;
++---------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 13.67) ; Number of LABs  (Total = 27) ;
++---------------------------------------------+------------------------------+
+; 1                                           ; 1                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 1                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 1                            ;
+; 13                                          ; 4                            ;
+; 14                                          ; 5                            ;
+; 15                                          ; 2                            ;
+; 16                                          ; 12                           ;
++---------------------------------------------+------------------------------+
+
+
++-------------------------------------------------------------------+
+; LAB-wide Signals                                                  ;
++------------------------------------+------------------------------+
+; LAB-wide Signals  (Average = 0.52) ; Number of LABs  (Total = 27) ;
++------------------------------------+------------------------------+
+; 1 Async. clear                     ; 7                            ;
+; 1 Clock                            ; 7                            ;
++------------------------------------+------------------------------+
+
+
 +-----------------------------------------------------------------------------+
-; LAB Logic Elements                                                          ;
-+---------------------------------------------+-------------------------------+
-; Number of Logic Elements  (Average = 13.94) ; Number of LABs  (Total = 511) ;
-+---------------------------------------------+-------------------------------+
-; 1                                           ; 23                            ;
-; 2                                           ; 6                             ;
-; 3                                           ; 4                             ;
-; 4                                           ; 6                             ;
-; 5                                           ; 4                             ;
-; 6                                           ; 4                             ;
-; 7                                           ; 2                             ;
-; 8                                           ; 4                             ;
-; 9                                           ; 4                             ;
-; 10                                          ; 7                             ;
-; 11                                          ; 8                             ;
-; 12                                          ; 13                            ;
-; 13                                          ; 28                            ;
-; 14                                          ; 33                            ;
-; 15                                          ; 56                            ;
-; 16                                          ; 309                           ;
-+---------------------------------------------+-------------------------------+
+; LAB Signals Sourced                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Signals Sourced  (Average = 14.96) ; Number of LABs  (Total = 27) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 1                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 1                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 2                            ;
+; 13                                           ; 3                            ;
+; 14                                           ; 3                            ;
+; 15                                           ; 4                            ;
+; 16                                           ; 6                            ;
+; 17                                           ; 0                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 0                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 2                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 1                            ;
+; 26                                           ; 0                            ;
+; 27                                           ; 1                            ;
++----------------------------------------------+------------------------------+
 
 
-+--------------------------------------------------------------------+
-; LAB-wide Signals                                                   ;
-+------------------------------------+-------------------------------+
-; LAB-wide Signals  (Average = 0.07) ; Number of LABs  (Total = 511) ;
-+------------------------------------+-------------------------------+
-; 1 Async. clear                     ; 19                            ;
-; 1 Clock                            ; 19                            ;
-+------------------------------------+-------------------------------+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 8.74) ; Number of LABs  (Total = 27) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 1                            ;
+; 2                                               ; 1                            ;
+; 3                                               ; 1                            ;
+; 4                                               ; 2                            ;
+; 5                                               ; 1                            ;
+; 6                                               ; 1                            ;
+; 7                                               ; 5                            ;
+; 8                                               ; 1                            ;
+; 9                                               ; 2                            ;
+; 10                                              ; 2                            ;
+; 11                                              ; 3                            ;
+; 12                                              ; 2                            ;
+; 13                                              ; 1                            ;
+; 14                                              ; 2                            ;
+; 15                                              ; 0                            ;
+; 16                                              ; 2                            ;
++-------------------------------------------------+------------------------------+
 
 
-+------------------------------------------------------------------------------+
-; LAB Signals Sourced                                                          ;
-+----------------------------------------------+-------------------------------+
-; Number of Signals Sourced  (Average = 14.00) ; Number of LABs  (Total = 511) ;
-+----------------------------------------------+-------------------------------+
-; 0                                            ; 0                             ;
-; 1                                            ; 23                            ;
-; 2                                            ; 6                             ;
-; 3                                            ; 3                             ;
-; 4                                            ; 7                             ;
-; 5                                            ; 4                             ;
-; 6                                            ; 5                             ;
-; 7                                            ; 3                             ;
-; 8                                            ; 4                             ;
-; 9                                            ; 4                             ;
-; 10                                           ; 7                             ;
-; 11                                           ; 7                             ;
-; 12                                           ; 11                            ;
-; 13                                           ; 34                            ;
-; 14                                           ; 43                            ;
-; 15                                           ; 85                            ;
-; 16                                           ; 248                           ;
-; 17                                           ; 1                             ;
-; 18                                           ; 2                             ;
-; 19                                           ; 2                             ;
-; 20                                           ; 2                             ;
-; 21                                           ; 1                             ;
-; 22                                           ; 1                             ;
-; 23                                           ; 0                             ;
-; 24                                           ; 4                             ;
-; 25                                           ; 1                             ;
-; 26                                           ; 0                             ;
-; 27                                           ; 0                             ;
-; 28                                           ; 3                             ;
-+----------------------------------------------+-------------------------------+
-
-
-+----------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                          ;
-+--------------------------------------------------+-------------------------------+
-; Number of Signals Sourced Out  (Average = 11.91) ; Number of LABs  (Total = 511) ;
-+--------------------------------------------------+-------------------------------+
-; 0                                                ; 0                             ;
-; 1                                                ; 28                            ;
-; 2                                                ; 9                             ;
-; 3                                                ; 6                             ;
-; 4                                                ; 6                             ;
-; 5                                                ; 4                             ;
-; 6                                                ; 7                             ;
-; 7                                                ; 13                            ;
-; 8                                                ; 32                            ;
-; 9                                                ; 45                            ;
-; 10                                               ; 8                             ;
-; 11                                               ; 15                            ;
-; 12                                               ; 37                            ;
-; 13                                               ; 52                            ;
-; 14                                               ; 56                            ;
-; 15                                               ; 52                            ;
-; 16                                               ; 141                           ;
-+--------------------------------------------------+-------------------------------+
-
-
-+------------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                          ;
-+----------------------------------------------+-------------------------------+
-; Number of Distinct Inputs  (Average = 16.92) ; Number of LABs  (Total = 511) ;
-+----------------------------------------------+-------------------------------+
-; 0                                            ; 0                             ;
-; 1                                            ; 0                             ;
-; 2                                            ; 10                            ;
-; 3                                            ; 6                             ;
-; 4                                            ; 14                            ;
-; 5                                            ; 4                             ;
-; 6                                            ; 2                             ;
-; 7                                            ; 5                             ;
-; 8                                            ; 3                             ;
-; 9                                            ; 1                             ;
-; 10                                           ; 15                            ;
-; 11                                           ; 22                            ;
-; 12                                           ; 35                            ;
-; 13                                           ; 34                            ;
-; 14                                           ; 28                            ;
-; 15                                           ; 45                            ;
-; 16                                           ; 41                            ;
-; 17                                           ; 61                            ;
-; 18                                           ; 26                            ;
-; 19                                           ; 19                            ;
-; 20                                           ; 14                            ;
-; 21                                           ; 10                            ;
-; 22                                           ; 14                            ;
-; 23                                           ; 8                             ;
-; 24                                           ; 11                            ;
-; 25                                           ; 6                             ;
-; 26                                           ; 12                            ;
-; 27                                           ; 6                             ;
-; 28                                           ; 18                            ;
-; 29                                           ; 7                             ;
-; 30                                           ; 8                             ;
-; 31                                           ; 11                            ;
-; 32                                           ; 10                            ;
-; 33                                           ; 3                             ;
-; 34                                           ; 1                             ;
-+----------------------------------------------+-------------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++---------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 9.89) ; Number of LABs  (Total = 27) ;
++---------------------------------------------+------------------------------+
+; 0                                           ; 0                            ;
+; 1                                           ; 0                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 5                            ;
+; 6                                           ; 2                            ;
+; 7                                           ; 2                            ;
+; 8                                           ; 1                            ;
+; 9                                           ; 3                            ;
+; 10                                          ; 1                            ;
+; 11                                          ; 5                            ;
+; 12                                          ; 2                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 1                            ;
+; 15                                          ; 2                            ;
+; 16                                          ; 0                            ;
+; 17                                          ; 0                            ;
+; 18                                          ; 0                            ;
+; 19                                          ; 0                            ;
+; 20                                          ; 0                            ;
+; 21                                          ; 1                            ;
+; 22                                          ; 0                            ;
+; 23                                          ; 0                            ;
+; 24                                          ; 0                            ;
+; 25                                          ; 0                            ;
+; 26                                          ; 0                            ;
+; 27                                          ; 1                            ;
++---------------------------------------------+------------------------------+
 
 
 +------------------------------------------+
@@ -1722,34 +1710,34 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "u_hr[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "u_min[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "u_sec[7]" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:09
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
-Info (170195): Router estimated average interconnect usage is 2% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 17% of the available device resources in the region that extends from location X33_Y11 to location X44_Y21
+Info (170195): Router estimated average interconnect usage is 0% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X67_Y33 to location X78_Y43
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
-Info (11888): Total time spent on timing analysis during the Fitter is 0.85 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.20 seconds.
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file D:/OneDrive/Repositories/turma2022-1_vhdl/timer_de10lite/output_files/relogio.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 149 warnings
-    Info: Peak virtual memory: 5631 megabytes
-    Info: Processing ended: Fri Oct 07 10:04:56 2022
-    Info: Elapsed time: 00:00:34
-    Info: Total CPU time (on all processors): 00:01:07
+    Info: Peak virtual memory: 5575 megabytes
+    Info: Processing ended: Fri Oct 07 10:48:30 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +----------------------------+
