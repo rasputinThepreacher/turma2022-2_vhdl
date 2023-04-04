@@ -1,0 +1,44 @@
+# Quartus e ModelSim .gitignore
+
+# Ignorar arquivos temporários e de configuração
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Ignorar arquivos e diretórios do Quartus
+*.qws
+*.sof
+*.pof
+*.jic
+*.rpd
+*.map
+*.asm
+*.fit
+*.sta
+*_assignment_defaults.qdf
+*_summary.html
+*_report.txt
+*_report.html
+*_report.xml
+*_report.xsl
+*_timequest.vg
+*TimeQuest SDC File.sdc
+**/db/
+**/incremental_db/
+**/output_files/
+
+# Ignorar arquivos e diretórios do ModelSim
+transcript
+vsim.wlf
+**/work/
+*.wlf
+*.do
+*.vcd
+*.svf
+
+# Arquivos e diretórios de outros sistemas de versionamento
+**/.svn/
+**/CVS/
+*.svnignore
