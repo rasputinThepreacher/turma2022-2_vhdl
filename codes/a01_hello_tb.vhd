@@ -5,11 +5,11 @@ architecture sim of a01_hello_tb is
 begin
 
     -- Thread
-    process is
+    imprime: process is
     begin
 
         report "Hello World!";
-        wait;
+        -- wait;
 
     end process;
 
