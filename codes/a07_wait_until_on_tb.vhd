@@ -1,7 +1,7 @@
-entity a08_if_tb is
+entity a07_wait_until_on_tb is
 end entity;
 
-architecture sim of a08_if_tb is
+architecture sim of a07_wait_until_on_tb is
 
     signal CntUp    :   integer := 0;
     signal CntDown  :   integer := 10;
