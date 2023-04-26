@@ -37,6 +37,11 @@ begin
     
     -- geraçao de clock
     clk <= not clk after 10 ns;
+    -- process is
+    -- begin
+    --    wait for 10 ns;
+    --    clk <= not clk;
+    --end process;
 
     rst <= '1' after 35 ns, '0' after 55 ns;
     

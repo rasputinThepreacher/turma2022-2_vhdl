@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+-- numeric_bit - baseada no tipo bit_vector
 
 entity a12_sig_unsig_tb is
 end entity;

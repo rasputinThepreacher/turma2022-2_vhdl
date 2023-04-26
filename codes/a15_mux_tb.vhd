@@ -12,7 +12,7 @@ architecture sim of a15_mux_tb is
     signal sig2  :   unsigned(7 downto 0) := x"CC";
     signal sig3  :   unsigned(7 downto 0) := x"DD";
 
-    signal sel   :   unsigned(1 downto 0) := "00";
+    signal sel_tb  :   unsigned(1 downto 0) := "00";
 
     signal saida :   unsigned(7 downto 0);
 
@@ -20,12 +20,12 @@ architecture sim of a15_mux_tb is
 
 begin
     -- Componente com os sinais chamados por ordem de aparição
-    --dut_mux: entity work.a15_mux(rtl) port map(sig0, sig1, sig2, sig3, sel, saida);
+    -- dut_mux: entity work.a15_mux(rtl) port map(sig0, sig1, sig2, sig3, sel, saida);
     
     -- Componente com os sinais chamados nominalmente
     dut_mux: entity work.a15_mux(rtl) port map(
         --Cmp           -- testbench
-        sel     =>      sel,
+        sel     =>      sel_tb,
         sig0    =>      sig0,
         sig1    =>      sig1,
         sig2    =>      sig2,
@@ -36,8 +36,8 @@ begin
     process is
     begin
         wait for 10 ns;
-        sel <= sel + 1;
-        if sel = "11" then
+        sel_tb <= sel_tb + 1;
+        if sel_tb = "11" then
             wait;
         end if;
     end process;
