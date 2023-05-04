@@ -6,18 +6,20 @@ entity a17b_contador is
     generic(n   :   integer := 8);
     port(
         clk, nRst   :   in  std_logic;
-        q           :   inout unsigned(n - 1 downto 0)
+        q           :   out unsigned(n - 1 downto 0)
     );
 end entity;
 
 architecture rtl of a17b_contador is
+    signal q_temp : unsigned(n - 1 downto 0);
 begin
     process(clk, nRst) is
     begin
         if nRst = '0' then
-            q <= (others => '0');
+            q_temp <= (others => '0');
         elsif rising_edge(clk) then
-            q <= q + 1;
+            q_temp <= q_temp + 1;
         end if;
     end process;
+    q <= q_temp;
 end architecture;

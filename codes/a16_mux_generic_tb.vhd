@@ -23,22 +23,22 @@ architecture sim of a16_mux_generic_tb is
 
 begin
     -- Componente com os sinais chamados por ordem de aparição
-    --dut_mux: entity work.a15_mux(rtl) 
-        -- generic map(n)
-        -- port map(sig0, sig1, sig2, sig3, sel, saida);
+    dut_mux: entity work.a16_mux(rtl) 
+        generic map(n)
+        port map(sig0, sig1, sig2, sig3, sel, saida);
     
     -- Componente com os sinais chamados nominalmente
-    dut_mux: entity work.a16_mux(rtl) 
-        generic map(dataWidth => n)
-        port map(
+    -- dut_mux: entity work.a16_mux(rtl) 
+    --    generic map(dataWidth => n)
+    --    port map(
             --Cmp           -- testbench
-            sel     =>      sel,
-            sig0    =>      sig0,
-            sig1    =>      sig1,
-            sig2    =>      sig2,
-            sig3    =>      sig3,
-            saida   =>      saida
-    );
+    --        sel     =>      sel,
+    --        sig0    =>      sig0,
+    --        sig1    =>      sig1,
+    --        sig2    =>      sig2,
+    --        sig3    =>      sig3,
+    --        saida   =>      saida
+    --);
 
     process is
     begin

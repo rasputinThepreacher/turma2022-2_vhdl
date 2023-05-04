@@ -28,7 +28,7 @@ begin
 
     process(clk, nRst) is
         begin
-            
+            -- Reset
             if nRst = '0' then
                 q <= '0';            
             elsif rising_edge(clk) then    -- falling_edge()
@@ -37,3 +37,7 @@ begin
     end process;
 
 end architecture;
+
+-- no caso de bit
+-- if clk'event and clk = '1' then
+    -- ...
