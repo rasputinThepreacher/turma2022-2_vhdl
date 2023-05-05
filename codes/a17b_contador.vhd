@@ -15,7 +15,7 @@ architecture rtl of a17b_contador is
 begin
     process(clk, nRst) is
     begin
-        if nRst = '0' then
+        if nRst = '0' then -- Reset
             q_temp <= (others => '0');
         elsif rising_edge(clk) then
             q_temp <= q_temp + 1;

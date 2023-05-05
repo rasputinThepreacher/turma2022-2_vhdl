@@ -16,8 +16,8 @@ architecture sim of a17b_contador_tb is
 
 begin
 
-    -- Instanciação do flip flop
-    i_ff    :   entity work.a17b_contador(rtl) 
+    -- Instanciação do contador
+    i_cont    :   entity work.a17b_contador(rtl) 
         generic map(n)
         port map(clk, nRst, q);
 
