@@ -4,10 +4,11 @@ use ieee.numeric_std.all;
 
 entity a19_timer_top is
     port(
-        clk, nRst   :  in   std_logic;
-        u_sec, d_sec:  out  unsigned(0 to 6);
-        u_min, d_min:  out  unsigned(0 to 6);
-        u_hr, d_hr  :  out  unsigned(0 to 6)
+        MAX10_CLK1_50	:  in   std_logic;
+		  SW   				:  in   std_logic_vector(0 downto 0);
+        HEX0, HEX1		:  out  unsigned(0 to 6);
+        HEX2, HEX3		:  out  unsigned(0 to 6);
+        HEX4, HEX5  		:  out  unsigned(0 to 6)
     );
 end entity;
 
@@ -15,15 +16,15 @@ architecture main of a19_timer_top is
     signal a, b, c  :   integer range 0 to 60;
 begin
     decod_s:    entity work.a19_decod(rtl)
-        port map(a, u_sec, d_sec);
+        port map(a, HEX0, HEX1);
 
     decod_m:    entity work.a19_decod(rtl)
-        port map(b, u_min, d_min);
+        port map(b, HEX2, HEX3);
 
     decod_h:    entity work.a19_decod(rtl)
-        port map(c, u_hr, d_hr);
+        port map(c, HEX4, HEX5);
 
     timer_0:    entity work.a19_timer(rtl)
 		  generic map(50e6)
-        port map(clk, nRst, a, b, c);
+        port map(MAX10_CLK1_50, SW(0), a, b, c);
 end architecture;

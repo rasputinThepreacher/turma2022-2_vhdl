@@ -44,7 +44,8 @@ begin
             h <= 0;
         elsif falling_edge(clk) then
             -- Procedimentos em cascata
-            incrementa(ticks, clockFreq, true, controle);
+            incrementa(ticks, clockFreq
+				, true, controle);
             incrementa(s, 60, controle, controle);
             incrementa(m, 60, controle, controle);
             incrementa(h, 24, controle, controle);
