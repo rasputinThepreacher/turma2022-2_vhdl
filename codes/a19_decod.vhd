@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity a19_decod is
     port(
         contador    :   in  integer;
-        d0, d1      :   out unsigned(0 to 6)
+        d0, d1      :   out std_logic_vector(0 to 6)
     );
 end entity;
 
@@ -38,8 +38,8 @@ begin
 
         dezena := contador / 10;
         unidade := unidade mod 10;
-        decodificando(dezena, d1);
-        decodificando(unidade, d0);
+        d1 <= decodificando(dezena);
+        d0 <= decodificando(unidade);
         
     end process;
 
