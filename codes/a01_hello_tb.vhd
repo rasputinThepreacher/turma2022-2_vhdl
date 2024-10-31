@@ -9,7 +9,7 @@ begin
     begin
 
         report "Hello World!";
-        -- wait;
+        wait;
 
     end process;
 
