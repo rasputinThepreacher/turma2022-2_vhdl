@@ -1,4 +1,7 @@
--- O objetivo deste código é imprimir os números inteiros de 1 a 5 e de 4 a 0 no console de simulação.
+-- Este testbench VHDL foi projetado para demonstrar a execução de loops 'for' com sequências
+-- numéricas em ordem crescente e decrescente. O objetivo é imprimir os números de 1 a 5 e, em seguida,
+-- de 4 a 0 no console de simulação. Este exemplo ajuda a entender como controlar o fluxo de execução
+-- com loops em VHDL e como utilizar o comando 'report' para visualizar valores durante a simulação.
 
 entity a04a_for_tb is
 end entity;
@@ -25,6 +28,7 @@ begin
         wait;
     end process;
 
-    -- Note que o tempo para rodar todo esse process na simulação é nulo
+    -- Os loops e reports executam sem atraso real de tempo, pois não incluímos 'wait for'.
+    -- Isso significa que, embora reportemos diferentes etapas, a execução é quase instantânea.
 
 end architecture;
