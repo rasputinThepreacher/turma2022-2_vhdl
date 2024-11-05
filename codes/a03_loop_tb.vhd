@@ -31,13 +31,8 @@ begin
             report "Dentro do loop: " & integer'image(i);
             
             -- Espera por 20 nanossegundos antes de prosseguir para a próxima iteração.
-            wait for 20 ns;
-            
-            -- Condição de saída do loop: se i é igual a 10, o loop é interrompido.
-            if i = 10 then
-                exit;
-            end if;
-            
+            wait for 20 ns;            
+                       
             -- Incremento da variável i para progressão do loop.
             i := i + 1;
         end loop;

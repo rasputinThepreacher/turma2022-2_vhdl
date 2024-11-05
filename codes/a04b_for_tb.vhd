@@ -7,11 +7,11 @@ use std.textio.all;
 -- Note novamente a entidade vazia para o testbench.
 -- Procure memorizar esta sintaxe.
 -- Note que a01c_hello_tb é o nome dessa entidade, definido pelo projetista.
-entity a01c_hello_tb is
+entity a04b_for_tb is
 end entity;
 
 -- Note que a arquitetura foi chamada de tb, nome também definido pelo projetista.
-architecture tb of a01c_hello_tb is
+architecture tb of a04b_for_tb is
     
 begin
     process

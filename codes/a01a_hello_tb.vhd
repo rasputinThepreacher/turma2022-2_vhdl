@@ -4,11 +4,11 @@
 
 -- Testbenches geralmente têm uma entidade vazia.
 -- A entidade define a interface do módulo com o exterior, mas aqui não são necessárias conexões externas.
-entity a01_hello_tb is
+entity a01a_hello_tb is
 end entity;
 
 -- A arquitetura descreve o comportamento interno do módulo.
-architecture sim of a01_hello_tb is
+architecture sim of a01a_hello_tb is
 begin
 
     -- Um process em VHDL é semelhante a uma thread em programação e executa comandos sequencialmente.

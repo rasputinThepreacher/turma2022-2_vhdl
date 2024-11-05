@@ -25,9 +25,6 @@ begin
         -- Imprime a mensagem no console de simulação. 'writeline' envia o conteúdo do buffer 'L' para o dispositivo de saída padrão.
         writeline(output, L);
 
-        -- Aguarda um tempo antes de finalizar o processo; útil para simular atrasos.
-        wait for 100 ms;
-
         -- Finaliza o processo.
         wait; -- O testbench para aqui, aguardando indefinidamente.
     end process;

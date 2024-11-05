@@ -1,0 +1,19 @@
+D:/repos/turma2022-2_vhdl/codes/a03_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/turma2022-2_vhdl/codes/a03_loop_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity a03_loop_tb
+-- Compiling architecture sim of a03_loop_tb
+
+} {} {}} D:/repos/turma2022-2_vhdl/codes/a02a_wait_for_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/turma2022-2_vhdl/codes/a02a_wait_for_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity a02_wait_for_tb
+-- Compiling architecture sim of a02_wait_for_tb
+
+} {} {}} D:/repos/turma2022-2_vhdl/codes/a01a_hello_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none D:/repos/turma2022-2_vhdl/codes/a01a_hello_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity a01a_hello_tb
+-- Compiling architecture sim of a01a_hello_tb
+
+} {} {}}
