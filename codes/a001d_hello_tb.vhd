@@ -8,10 +8,10 @@ library std; -- opcional
 use std.textio.all; -- utilizado para manipulação de texto 
 
 -- Entidade vazia para testbench; não há portas porque é apenas para simulação e teste.
-entity a01b_hello_tb is
+entity a001d_hello_tb is
 end entity;
 
-architecture tb of a01b_hello_tb is
+architecture tb of a001d_hello_tb is
 begin
     process
         -- Tipo de dado 'line' do pacote textio usado para manipular e armazenar texto.

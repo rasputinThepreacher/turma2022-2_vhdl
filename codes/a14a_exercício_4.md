@@ -1,4 +1,4 @@
-**Exercício: Gerador de Sinal UART para o Caractere 'a' em VHDL**
+# Exercício: Gerador de Sinal UART para o Caractere 'a' em VHDL
 
 **Objetivo:** Desenvolva um testbench em VHDL que simule a transmissão de um caractere 'a' usando o protocolo UART (Universal Asynchronous Receiver/Transmitter). O exercício deve incluir a geração de um bit de início, o envio dos bits de dados, e um bit de parada.
 
