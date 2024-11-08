@@ -4,11 +4,11 @@
 
 -- Declaração da entidade sem portas, pois é um testbench que não necessita 
 -- de interfaces externas.
-entity a02_wait_for_tb is
+entity a002a_wait_for_tb is
 end entity;
 
 -- Arquitetura da entidade, contendo o processo que utiliza o comando "wait for".
-architecture sim of a02_wait_for_tb is
+architecture sim of a002a_wait_for_tb is
 begin
 
     -- Processo que executa comandos sequencialmente.
