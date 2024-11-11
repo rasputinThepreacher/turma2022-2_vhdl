@@ -7,10 +7,10 @@ library ieee;
 use ieee.std_logic_1164.all;         -- Biblioteca padrão para tipos 'std_logic' e 'std_logic_vector'.
 use ieee.numeric_std.all;            -- Biblioteca que fornece os tipos 'unsigned' e 'signed' e operações aritméticas.
 
-entity a12_sig_unsig_tb is
+entity a005c_sig_unsig_tb is
 end entity;
 
-architecture sim of a12_sig_unsig_tb is
+architecture sim of a005c_sig_unsig_tb is
     -- Sinais definidos como 'unsigned' e 'signed' para demonstrar operações aritméticas.
     signal UnsCnt   : unsigned(7 downto 0) := (others => '0');  -- Contador 'unsigned', iniciado em 0.
     signal SigCnt   : signed(7 downto 0) := (others => '0');    -- Contador 'signed', também iniciado em 0.

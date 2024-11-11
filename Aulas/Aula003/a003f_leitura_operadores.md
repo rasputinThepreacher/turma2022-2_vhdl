@@ -1,11 +1,6 @@
-# Exercício: Simulação da Sequência de Fibonacci em VHDL
-
-Desenvolva um testbench em VHDL que calcule e imprima a sequência de Fibonacci. A sequência deve ser gerada e reportada sequencialmente, começando pelos números 0 e 1, até que o próximo número a ser gerado seja igual ou superior a uma constante pré-definida, `FIB_LIMIT`, que você deverá definir como 100. O objetivo deste exercício é praticar o uso de variáveis, constantes e loops em VHDL para simular uma sequência numérica conhecida.
-
----
 # Operadores Relacionais em VHDL
 
-Em VHDL, comparações são realizadas usando operadores relacionais que verificam as relações entre valores, como se são iguais, diferentes, maiores ou menores entre si. Esses operadores são essenciais para determinar a lógica de controle em vários contextos de programação de hardware, mesmo antes de introduzir estruturas condicionais como o `if`.
+Em VHDL, comparações são realizadas usando operadores relacionais que verificam as relações entre valores, como se são iguais, diferentes, maiores ou menores entre si. Esses operadores são essenciais para determinar a lógica de controle em vários contextos de programação de hardware.
 
 
 Aqui estão os operadores relacionais mais comuns usados em VHDL para fazer comparações:
@@ -56,6 +51,46 @@ end loop;
 Operadores relacionais são ferramentas poderosas em VHDL que permitem a execução de verificações lógicas essenciais para a correta implementação e simulação de circuitos digitais.
 
 ---
+# Operadores Aritméticos Básicos
+
+Em VHDL, os operadores aritméticos são fundamentais para realizar cálculos e manipulações numéricas em variáveis e sinais. A aplicação desses operadores, no entanto, depende fortemente do tipo de dados associado a eles, como `integer`, `real`, `signed`, `unsigned`, entre outros. A correta utilização e os efeitos dos operadores podem variar significativamente dependendo deste tipo. Aqui está uma explicação detalhada sobre os principais operadores aritméticos em VHDL e como eles interagem com diferentes tipos de dados:
+
+
+1. **Adição (`+`)**:
+   - **Integer e Real**: Realiza a soma tradicional.
+   - **Signed e Unsigned**: Soma vetores de bits interpretados como números binários.
+
+2. **Subtração (`-`)**:
+   - **Integer e Real**: Realiza a subtração tradicional.
+   - **Signed e Unsigned**: Subtrai vetores de bits, similar à adição, mas subtrai valores binários.
+
+3. **Multiplicação (`*`)**:
+   - **Integer e Real**: Multiplica valores.
+   - **Signed e Unsigned**: Multiplica valores binários, resultando em um vetor de bits cujo tamanho é geralmente a soma dos tamanhos dos operandos.
+
+4. **Divisão (`/`)**:
+   - **Integer e Real**: Divide o primeiro operando pelo segundo.
+   - **Signed e Unsigned**: A divisão de vetores de bits é menos comum, mas quando aplicada, segue a divisão binária.
+
+5. **Modulação (`mod`)**:
+   - **Integer**: Retorna o resto da divisão entre dois inteiros.
+   - **Signed e Unsigned**: Raramente usado; `mod` não é geralmente aplicado para esses tipos em VHDL padrão.
+
+6. **Divisão Inteira (`rem`)**:
+   - **Integer**: Similar ao `mod`, mas `rem` lida com sinais de forma diferente em casos de números negativos.
+
+### Dependência dos Tipos
+
+Os operadores aritméticos em VHDL não são universalmente aplicáveis a todos os tipos de dados. Por exemplo, você não pode usar operadores aritméticos diretamente com `std_logic` ou `std_logic_vector` sem primeiro converter esses tipos em `signed` ou `unsigned`. Esta conversão é necessária porque `std_logic_vector` é essencialmente um vetor de valores binários sem nenhuma indicação de se representar um número positivo ou negativo, enquanto `signed` e `unsigned` são explicitamente interpretados como binários com e sem sinal, respectivamente.
+
+### Considerações Especiais
+
+- **Precisão e Saturação**: Operações em `signed` e `unsigned` podem levar a situações de overflow se o resultado de uma operação exceder a capacidade do vetor de bits alocado. Em tais casos, a maneira como o overflow é tratado pode depender da implementação específica ou de opções de configuração no ambiente de simulação/síntese.
+- **Conversões de Tipo**: Muitas operações requerem conversões explícitas entre tipos para assegurar comportamentos corretos, especialmente ao misturar tipos diferentes em operações matemáticas. Isso é crucial para evitar erros de compilação e comportamentos inesperados.
+- **Uso de Bibliotecas**: Alguns tipos como `signed` e `unsigned` requerem a inclusão de bibliotecas específicas (`ieee.numeric_std.all`), pois não são parte do núcleo da linguagem VHDL.
+
+Em resumo, os operadores aritméticos em VHDL são ferramentas poderosas para manipulação numérica, mas exigem um entendimento claro dos tipos de dados envolvidos e das regras para sua aplicação correta. Isso assegura que as operações de design digital sejam executadas de forma precisa e eficiente.
+
 # Funcionamento do Comando `Exit`
 O comando `exit` em VHDL é uma instrução de controle usada para sair prematuramente de loops, como `loop`, `for loop`, ou `while loop`. Este comando é particularmente útil para interromper a execução de um loop quando uma condição específica é atendida, evitando assim a necessidade de completar todas as iterações planejadas do loop.
 

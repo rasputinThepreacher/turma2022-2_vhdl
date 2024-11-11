@@ -7,10 +7,10 @@
 library ieee; -- Inclui a biblioteca IEEE para acesso a tipos e funções padrões.
 use ieee.std_logic_1164.all; -- Usa o pacote std_logic_1164 que define o tipo std_logic.
 
-entity a10_std_logic_tb is -- Declara a entidade do testbench, que não tem portas.
+entity a005a_std_logic_tb is -- Declara a entidade do testbench, que não tem portas.
 end entity;
 
-architecture sim of a10_std_logic_tb is -- Define a arquitetura de simulação para o testbench.
+architecture sim of a005a_std_logic_tb is -- Define a arquitetura de simulação para o testbench.
     signal clock : std_logic := '0'; -- Inicia o sinal de clock em '0'.
     
 begin

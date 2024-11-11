@@ -11,10 +11,10 @@
 -- Esses exemplos ilustram como combinar condições lógicas com sensibilidade de sinal para
 -- criar respostas dinâmicas em simulações de circuitos digitais.
 
-entity a08_if_tb is
+entity a004c_if_tb is
 end entity;
 
-architecture sim of a08_if_tb is
+architecture sim of a004c_if_tb is
     signal CntUp    :   integer := 0;
     signal CntDown  :   integer := 10;
 

@@ -6,10 +6,10 @@
 library ieee;
 use ieee.std_logic_1164.all; -- Importa a biblioteca IEEE para acesso aos tipos de dados 'std_logic' e 'std_logic_vector'.
 
-entity a11_slv_tb is
+entity a005b_slv_tb is
 end entity;
 
-architecture sim of a11_slv_tb is
+architecture sim of a005b_slv_tb is
     -- Declaração de diferentes 'std_logic_vector' para demonstração.
     signal slv1 : std_logic_vector(8 downto 1);               -- Vetor não inicializado.
     signal clk  : std_logic_vector(7 downto 0) := "01010101"; -- Vetor inicializado com um padrão específico.

@@ -8,10 +8,10 @@ library ieee;
 use ieee.std_logic_1164.all; -- Importa tipos e operações para std_logic e std_logic_vector.
 use ieee.numeric_std.all;    -- Importa tipos e operações para signed e unsigned.
 
-entity a13_processos_paralelos_tb is
+entity a006a_processos_paralelos_tb is
 end entity;
 
-architecture sim of a13_processos_paralelos_tb is
+architecture sim of a006a_processos_paralelos_tb is
     -- Sinais usados para demonstração de operações paralelas e manipulação de sinal.
     signal Uns   : unsigned(5 downto 0) := (others => '0'); -- Contador incrementado a cada 10 ns.
     signal Mul1, Mul2, Mul3  : unsigned(7 downto 0); -- Resultados de multiplicação.
