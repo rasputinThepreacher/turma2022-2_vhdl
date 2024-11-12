@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 -- use ieee.numeric_std.all;
 
-entity a17_flipFlop_tb is
+entity a008b_flipFlop_tb is
 end entity;
 
-architecture sim of a17_flipFlop_tb is
+architecture sim of a008b_flipFlop_tb is
 
     constant clkFreq    :   integer := 100e6;   -- 100 MHz
     constant clkPer     :   time    := 1000 ms / clkFreq;

@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity a17b_contador_tb is
+entity a008d_contador_tb is
 end entity;
 
-architecture sim of a17b_contador_tb is
+architecture sim of a008d_contador_tb is
     constant n          :   integer := 5;
     constant clkFreq    :   integer := 100e6;   -- 100 MHz
     constant clkPer     :   time    := 1000 ms / clkFreq;

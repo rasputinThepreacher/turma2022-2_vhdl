@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity a17b_contador is
+entity a008c_contador is
     generic(n   :   integer := 8);
     port(
         clk, nRst   :   in  std_logic;
@@ -10,7 +10,7 @@ entity a17b_contador is
     );
 end entity;
 
-architecture rtl of a17b_contador is
+architecture rtl of a008c_contador is
     signal q_temp : unsigned(n - 1 downto 0);
 begin
     process(clk, nRst) is

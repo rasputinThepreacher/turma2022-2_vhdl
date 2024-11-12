@@ -8,10 +8,10 @@ library ieee;
 use ieee.std_logic_1164.all; -- Inclui a biblioteca padrão para operações com std_logic e std_logic_vector.
 use ieee.numeric_std.all; -- Inclui a biblioteca para operações com tipos aritméticos como 'unsigned'.
 
-entity a15b_mux_tb is
-end a15b_mux_tb;
+entity a007b_mux_tb is
+end a007b_mux_tb;
 
-architecture sim of a15b_mux_tb is
+architecture sim of a007b_mux_tb is
     -- Definindo sinais de teste para entradas do mux e para seleção.
     signal sig0  :   unsigned(7 downto 0) := x"AA"; -- Entrada 0 com valor inicial AA.
     signal sig1  :   unsigned(7 downto 0) := x"BB"; -- Entrada 1 com valor inicial BB.

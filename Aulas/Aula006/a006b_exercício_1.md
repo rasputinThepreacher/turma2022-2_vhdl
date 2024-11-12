@@ -4,6 +4,10 @@
 
 **Especificações:** Configure as transmissões para 8 bits de dados, sem paridade e um bit de parada. Utilize o `wait for` para simular o intervalo de tempo entre os bits transmitidos. O envio dos caracteres devem ocorrer a cada um segundo.
 
+**Dica:** Utilizar um processo para cada transmissão;
+
+**Material sobre UART:** [Clique aqui](https://www.analog.com/en/resources/analog-dialogue/articles/uart-a-hardware-communication-protocol.html)
+
 ---
 # Tabela ASCII
 

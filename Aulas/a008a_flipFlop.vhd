@@ -1,8 +1,12 @@
+-- Este código em VHDL tem o intuito de mostrar como implementar um Flip-Flop tipo D
+-- em VHDL. A detecção da borda de clock é feita pela função rising_edge() ou falling_edge.
+
+
 library ieee;
 use ieee.std_logic_1164.all;
 -- use ieee.numeric_std.all;
 
-entity a17_flipFlop is
+entity a008a_flipFlop is
     port(
         clk     :   in  std_logic;
         nRst    :   in  std_logic;
@@ -11,7 +15,7 @@ entity a17_flipFlop is
     );
 end entity;
 
-architecture rtl of a17_flipFlop is
+architecture rtl of a008a_flipFlop is
 begin
 
     -- Flip flop com reset síncrono
@@ -28,7 +32,7 @@ begin
 
     process(clk, nRst) is
         begin
-            -- Reset
+            -- Reset assíncrono 
             if nRst = '0' then
                 q <= '0';            
             elsif rising_edge(clk) then    -- falling_edge()
