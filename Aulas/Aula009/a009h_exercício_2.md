@@ -2,6 +2,8 @@
 
 **Objetivo:** Desenvolver um procedimento que calcule a média de uma série de valores inseridos e retorne o resultado como um sinal de saída. O procedimento deve receber uma array de inteiros e o tamanho da array, e deve produzir um sinal de saída com a média calculada.
 
+---
+
 ## Como fazer um array de inteiros em VHDL?
 
 Em VHDL, para criar um array de inteiros, você precisa definir o tipo de dado que o array irá armazenar e especificar as dimensões do array. Aqui está um guia passo a passo sobre como você pode definir e utilizar um array de inteiros em VHDL:
