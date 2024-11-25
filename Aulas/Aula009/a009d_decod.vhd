@@ -2,14 +2,14 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity a19_decod is
+entity a009d_decod is
     port(
         contador    :   in  integer;
         d0, d1      :   out std_logic_vector(0 to 6)
     );
 end entity;
 
-architecture rtl of a19_decod is
+architecture rtl of a009d_decod is
     function decodificando(valor: integer) return std_logic_vector is
         variable saida: std_logic_vector(6 downto 0);
     begin

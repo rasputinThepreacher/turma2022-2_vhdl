@@ -1,10 +1,10 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity a18_timer_tb is
+entity a009b_timer_tb is
 end entity;
 
-architecture sim of a18_timer_tb is
+architecture sim of a009b_timer_tb is
     constant clockFreq      :   integer := 10;
     constant clkPer         :   time := 1000 ms/clockFreq;
 

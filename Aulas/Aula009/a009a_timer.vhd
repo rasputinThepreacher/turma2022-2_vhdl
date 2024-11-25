@@ -1,7 +1,9 @@
+-- Código em VHDL que representa um timer com mostrador de horas, minitos e segundos
+
 library ieee;
 use ieee.std_logic_1164.all;    -- permite uso de std_logic ou slv
 
-entity a18_timer is 
+entity a009a_timer is 
     generic(clockFreq   :   integer := 10); -- 10 Hz
     port(
         clk, nRst   :   in      std_logic;
@@ -10,7 +12,7 @@ entity a18_timer is
     );
 end entity;
 
-architecture rtl of a18_timer is
+architecture rtl of a009a_timer is
     -- Sinal para contar ciclos de clock
     signal ticks    :   integer range 0 to clockFreq;
 begin
