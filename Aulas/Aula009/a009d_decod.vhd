@@ -4,14 +4,14 @@ use ieee.numeric_std.all;
 
 entity a009d_decod is
     port(
-        contador    :   in  integer;
+        contador    :   in  integer range 0 to 60;
         d0, d1      :   out std_logic_vector(0 to 6)
     );
 end entity;
 
 architecture rtl of a009d_decod is
     function decodificando(valor: integer) return std_logic_vector is
-        variable saida: std_logic_vector(6 downto 0);
+        variable saida: std_logic_vector(0 to 6);
     begin
         case valor is
             when 0 => saida := not "1111110";
@@ -33,11 +33,11 @@ architecture rtl of a009d_decod is
 begin
 
     process(contador) is
-        variable dezena, unidade :   integer;
+        variable dezena, unidade :   integer range 0 to 60;
     begin
 
         dezena := contador / 10;
-        unidade := unidade mod 10;
+        unidade := contador mod 10;
         d1 <= decodificando(dezena);
         d0 <= decodificando(unidade);
         

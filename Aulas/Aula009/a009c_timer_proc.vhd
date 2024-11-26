@@ -1,16 +1,16 @@
 library ieee;
 use ieee.std_logic_1164.all;    -- permite uso de std_logic ou slv
 
-entity a19_timer is 
-    generic(clockFreq   :   integer := 10); -- 10 Hz
+entity a009c_timer_proc is 
+    generic(clockFreq   :   integer := 50e6); -- 10 Hz
     port(
         clk, nRst   :   in      std_logic;
-        s, m        :   inout   integer;
-        h           :   inout   integer
+        s, m        :   inout   integer range 0 to 60;
+        h           :   inout   integer range 0 to 60
     );
 end entity;
 
-architecture rtl of a19_timer is
+architecture rtl of a009c_timer_proc is
     -- Sinal para contar ciclos de clock
     signal ticks    :   integer;
 
