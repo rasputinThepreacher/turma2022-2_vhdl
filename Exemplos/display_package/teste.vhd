@@ -1,7 +1,7 @@
-library ieee, display_utils;
+library ieee, work;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-use display_utils.display.all;
+use work.display.all;
 
 entity teste is
 	port(
