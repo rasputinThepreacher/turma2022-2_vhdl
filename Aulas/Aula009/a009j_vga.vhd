@@ -110,15 +110,17 @@ begin
     process(horizontal, vertical, active)
         variable draw : std_logic_vector(11 downto 0);
     begin
-        draw := (others => '0');
-        quadrado(active, horizontal, vertical, 350, 275, 60, x"F00", draw);
-        quadrado(active, horizontal, vertical, 400, 300, 60, x"0F0", draw);
-        quadrado(active, horizontal, vertical, 450, 325, 60, x"00F", draw);
 
-        VGA_R <= draw(11 downto 8); -- red
-        VGA_G <= draw(7 downto 4);  -- green
-        VGA_B <= draw(3 downto 0);  -- blue
-        
+        if rising_edge(clk) then
+            draw := (others => '0');
+            quadrado(active, horizontal, vertical, 350, 275, 60, x"F00", draw);
+            quadrado(active, horizontal, vertical, 400, 300, 60, x"0F0", draw);
+            quadrado(active, horizontal, vertical, 450, 325, 60, x"00F", draw);
+
+            VGA_R <= draw(11 downto 8); -- red
+            VGA_G <= draw(7 downto 4);  -- green
+            VGA_B <= draw(3 downto 0);  -- blue
+        end if;
     end process;
     
     
