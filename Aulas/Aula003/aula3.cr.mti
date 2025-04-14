@@ -1,20 +1,14 @@
-C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003b_for_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003b_for_loop_tb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Compiling entity a003b_for_loop_tb
--- Compiling architecture sim of a003b_for_loop_tb
-
-} {} {}} C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003d_while_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003d_while_loop_tb.vhd
+C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003d_while_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003d_while_loop_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Compiling entity a003d_while_loop_tb
 -- Compiling architecture sim of a003d_while_loop_tb
 
-} {} {}} C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003a_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003a_loop_tb.vhd
+} {} {}} C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003b_for_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003b_for_loop_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
--- Compiling entity a003a_loop_tb
--- Compiling architecture sim of a003a_loop_tb
+-- Compiling entity a003b_for_loop_tb
+-- Compiling architecture sim of a003b_for_loop_tb
 
 } {} {}} C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003c_for_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003c_for_loop_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -23,10 +17,10 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity a003c_for_loop_tb
 -- Compiling architecture tb of a003c_for_loop_tb
 
-} {} {}} C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003e_while_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003e_while_loop_tb.vhd
+} {} {}} C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003a_loop_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula003/a003a_loop_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
--- Compiling entity a003e_while_loop_tb
--- Compiling architecture sim of a003e_while_loop_tb
+-- Compiling entity a003a_loop_tb
+-- Compiling architecture sim of a003a_loop_tb
 
 } {} {}}
