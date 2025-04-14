@@ -1,0 +1,7 @@
+C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula002/a002a_wait_for_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula002/a002a_wait_for_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity a002a_wait_for_tb
+-- Compiling architecture sim of a002a_wait_for_tb
+
+} {} {}}
