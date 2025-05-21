@@ -10,9 +10,9 @@ use ieee.numeric_std.all; -- Biblioteca para operações aritméticas e lógicas
 
 entity a007a_mux is
     port(
-        sig0, sig1, sig2, sig3  :   in  unsigned(7 downto 0); -- Entradas do mux, cada uma de 8 bits.
+        sig0, sig1, sig2, sig3  :   in  unsigned(1 downto 0); -- Entradas do mux, cada uma de 8 bits.
         sel                     :   in  unsigned(1 downto 0); -- Sinal de seleção de 2 bits para escolher entre as entradas.
-        saida                   :   out unsigned(7 downto 0)); -- Saída do mux de 8 bits.
+        saida                   :   out unsigned(1 downto 0)); -- Saída do mux de 8 bits.
 end entity;
 
 architecture rtl of a007a_mux is

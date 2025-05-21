@@ -1,0 +1,13 @@
+C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula004/a004a_signal_variable_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula004/a004a_signal_variable_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity a004a_signal_variable_tb
+-- Compiling architecture sim of a004a_signal_variable_tb
+
+} {} {}} C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula004/a004b_wait_until_on_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/Yan/Documents/GitHub/turma2022-2_vhdl/Aulas/Aula004/a004b_wait_until_on_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity a004b_wait_until_on_tb
+-- Compiling architecture sim of a004b_wait_until_on_tb
+
+} {} {}}

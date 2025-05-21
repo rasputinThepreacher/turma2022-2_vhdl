@@ -13,16 +13,16 @@ end a007b_mux_tb;
 
 architecture sim of a007b_mux_tb is
     -- Definindo sinais de teste para entradas do mux e para seleção.
-    signal sig0  :   unsigned(7 downto 0) := x"AA"; -- Entrada 0 com valor inicial AA.
-    signal sig1  :   unsigned(7 downto 0) := x"BB"; -- Entrada 1 com valor inicial BB.
-    signal sig2  :   unsigned(7 downto 0) := x"CC"; -- Entrada 2 com valor inicial CC.
-    signal sig3  :   unsigned(7 downto 0) := x"DD"; -- Entrada 3 com valor inicial DD.
+    signal sig0  :   unsigned(1 downto 0) := "00"; -- Entrada 0 com valor inicial AA.
+    signal sig1  :   unsigned(1 downto 0) := "01"; -- Entrada 1 com valor inicial BB.
+    signal sig2  :   unsigned(1 downto 0) := "10"; -- Entrada 2 com valor inicial CC.
+    signal sig3  :   unsigned(1 downto 0) := "11"; -- Entrada 3 com valor inicial DD.
     signal sel_tb  :   unsigned(1 downto 0) := "00"; -- Seletor inicializado para testar a primeira entrada.
-    signal saida :   unsigned(7 downto 0); -- Saída do mux para ser observada no teste.
+    signal saida :   unsigned(1 downto 0); -- Saída do mux para ser observada no teste.
 
 begin
     -- Chamada do componente mux do arquivo anterior utilizando mapeamento nominal das portas.
-    dut_mux: entity work.a15a_mux(rtl) port map(
+    dut_mux: entity work.a007a_mux(rtl) port map(
         sel     =>      sel_tb,   -- Mapeando sel_tb do testbench para sel do mux.
         sig0    =>      sig0,     -- Conectando sig0.
         sig1    =>      sig1,     -- Conectando sig1.

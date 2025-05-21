@@ -10,7 +10,9 @@ architecture sim of a003e_while_loop_tb is
     --constant n  :   integer := 9; -- Declara a constante 'n' com o valor 9 para uso como condição de saída do loop.
     constant n  :   integer := 100; -- Valor modificado por mim do código
     constant FIB_LIMIT : integer := 100;   -- Valor modificado por mim do código 
-      
+    
+
+    
 begin
 
     -- Thread
