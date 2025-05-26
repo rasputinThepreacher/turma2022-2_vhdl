@@ -8,8 +8,8 @@ entity a009e_timer_proc_top is
         -- KEY foi colocado como vetor para facilitar o pin planer utilizando o projeto modelo do kit DE10 lite 
         -- Neste projeto, todas as atribuições dos periféricos da placa já estão prontos.
         -- No entanto, KEY deve ser definido como um vetor para que isso funcione adequadamente.
-		KEY				:	in   std_logic_vector(0 downto 0); -- Reset: indice 0
-        HEX0, HEX1      :  out  std_logic_vector(0 to 6); -- segundos
+		KEY				:	in   std_logic_vector(0 downto 0); -- Reset: indice 0    -- para declarar o bot�o nos pinos devemos declarar como vetor
+        HEX0, HEX1      :  out  std_logic_vector(0 to 6); -- segundos     
         HEX2, HEX3      :  out  std_logic_vector(0 to 6); -- minutos
         HEX4, HEX5      :  out  std_logic_vector(0 to 6)  -- horas
     );
